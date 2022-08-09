@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* VARIABLE */
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --darkCyan: hsl(179, 63%, 40%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+/* VARIABLE */
+
+
+body {
+    background-color: var(--lightGray);
+    font-size: 1em;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+
+
+/* CARD */
+
+.card {
+    max-width: 90%;
+    margin-inline: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    /* padding-inline: 5%; */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card_top {
+    padding: 5%;
+}
+
+.card_top h1 {
+    font-size: 1.5em;
+    color: var(--cyan);
+    margin-bottom: 20px;
+}
+
+.card_top h2 {
+    font-size: 1.2em;
+    color: var(--brightYellow);
+    margin-bottom: 10px;
+}
+
+.card_top p {
+    color: var(--grayishBlue);
+}
+
+.card_bottom {
+    /* padding: 5% 0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.card_pricing {
+    padding: 5%;
+    background-color: var(--darkCyan);
+    color: #fff;
+}
+
+.card_pricing-heading {
+    font-size: 1.2em;
+}
+
+.card_pricing-price {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 10px 0;
+    gap: 10px;
+}
+
+.card_pricing-price span {
+    opacity: .8;
+}
+
+.btn {
+    border: none;
+    background: var(--brightYellow);
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.card_description {
+    background-color: var(--cyan);
+    padding: 5%;
+    color: #fff;
+}
+
+.card_description h2 {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+}
+
+.card_description p {
+    color: var(--lightGray);
+    max-width: 70%;
+}
+
+
+@media (min-width: 1280px) {
+    .card {
+        max-width: 60%;
+    }
+
+    .card_bottom {
+        flex-direction: row;
+    }
+
+    .card_pricing, .card_description {
+        width: 50%;
+    }
+}
+
+/* CARD */
+
+footer {
+    position: absolute;
+    bottom: 40px;
+}
