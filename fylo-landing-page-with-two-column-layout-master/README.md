@@ -11,11 +11,6 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 
 
 ## Overview
@@ -40,8 +35,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Github](https://github.com/ayra-sa/frontendMentor_Fylo-landing-page-with-two-column-layout)
-- Live Site URL: [Live Site](https://ayra-sa.github.io/frontendMentor_Fylo-landing-page-with-two-column-layout/)
+- Solution URL: [Github](https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-landing-page-with-two-column-layout-master)
+- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/fylo-landing-page-with-two-column-layout-master/index.html)
 
 ## My process
 

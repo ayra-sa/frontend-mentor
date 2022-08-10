@@ -11,10 +11,6 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 
@@ -40,8 +36,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Github](https://github.com/ayra-sa/frontendMentor_huddle-landing-page-with-curved-sections-master)
-- Live Site URL: [Live Site](https://ayra-sa.github.io/frontendMentor_huddle-landing-page-with-curved-sections-master/)
+- Solution URL: [Github](https://github.com/ayra-sa/frontend-mentor/tree/main/huddle-landing-page-with-curved-sections-master)
+- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/huddle-landing-page-with-curved-sections-master/index.html)
 
 ## My process
 

@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontendMentor_Huddle-landing-page-with-single-introductory-section-challenge)
-- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontendMentor_Huddle-landing-page-with-single-introductory-section-challenge/)
+- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/huddle-landing-page-with-single-introductory-section-master/index.html)
 
 ## My process
 

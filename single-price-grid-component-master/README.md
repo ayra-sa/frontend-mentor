@@ -11,10 +11,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -31,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontendMentor_Single-price-grid-component-challenge)
-- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontendMentor_Single-price-grid-component-challenge/)
+- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/single-price-grid-component-master)
+- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/single-price-grid-component-master/index.html)
 
 ## My process
 

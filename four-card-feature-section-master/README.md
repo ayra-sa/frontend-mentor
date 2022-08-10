@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/four-card-feature-section-master)
+- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/four-card-feature-section-master/index.html)
 
 ## My process
 
