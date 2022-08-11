@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLE */
+
+:root {
+  --font: "Red Hat Display", sans-serif;
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --brightBlueHover: hsl(245, 76%, 61%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+/* VARIABLE */
+
+
+body {
+    font-family: var(--font);
+    font-size: 1em;
+    background: url(images/pattern-background-mobile.svg) no-repeat top;
+    background-size: contain;
+    background-color: var(--paleBlue);
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    line-height: 27px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.card {
+    max-width: 90%;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #fff;
+    box-shadow: -1px 9px 36px -4px #0000004f;
+    border-radius: 20px;
+    color: var(--desaturatedBlue);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card figure img {
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+
+.card_desc {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+.card_content {
+  padding: 30px;
+}
+
+.card_content h1 {
+  color: var(--darkBlue);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.card_plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: var(--veryPaleBlue);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card_plan-left {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.card_plan h2 {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: var(--darkBlue);
+}
+
+.card_plan p {
+  font-size: 1.1em;
+}
+
+.card_plan a {
+  text-decoration: underline;
+  color: var(--brightBlue);
+  font-weight: 900;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.card_plan a:hover {
+  color: var(--brightBlueHover);
+}
+
+.btn {
+  display: flex;
+  border: none;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.btn_primary {
+  background-color: var(--brightBlue);
+  color: #fff;
+  width: 100%;
+  border-radius: 14px;
+  padding: 16px;
+  transition: .3s ease;
+  box-shadow: -1px 9px 36px -4px #0000004f;
+  /*font-weight: 700;
+  *//*font-size: 1.2em;
+  */-webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.btn_primary:hover {
+  background-color: var(--brightBlueHover);
+}
+
+.btn_transparent {
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  color: var(--desaturatedBlue);
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.btn_transparent:hover {
+  color: var(--darkBlue);
+}
+
+.attribution {
+  margin-top: 40px;
+}
+
+
+@media (min-width: 1280px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+
+  .card {
+    max-width: 30%;
+  }
+}

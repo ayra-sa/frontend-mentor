@@ -60,6 +60,12 @@ const data = [
       level: "newbies",
       image: "single-price-grid-component-master/design/desktop-preview.jpg"
   },
+  {
+      name: "Order summary card challenge",
+      link: "order-summary-component-main/index.html",
+      level: "newbies",
+      image: "order-summary-component-main/design/desktop-preview.jpg"
+  },
 ];
 
 let displayData = document.getElementById("data");
