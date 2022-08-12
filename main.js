@@ -66,6 +66,12 @@ const data = [
       level: "newbies",
       image: "order-summary-component-main/design/desktop-preview.jpg"
   },
+  {
+      name: "Stats preview card component challenge",
+      link: "stats-preview-card-component-main/index.html",
+      level: "newbies",
+      image: "stats-preview-card-component-main/design/desktop-preview.jpg"
+  },
 ];
 
 let displayData = document.getElementById("data");
