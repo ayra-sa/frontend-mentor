@@ -72,6 +72,10 @@ nav a {
   -o-transition: .3s ease;
 }
 
+.card.hide {
+  display: none;
+}
+
 .card_detail {
   padding: 20px;
 }

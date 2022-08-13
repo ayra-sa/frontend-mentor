@@ -51,25 +51,25 @@ const data = [
   {
       name: "QR code component challenge",
       link: "qr-code-component-main/index.html",
-      level: "newbies",
+      level: "newbie",
       image: "qr-code-component-main/design/desktop-preview.jpg"
   },
   {
       name: "Single price grid component challenge",
       link: "single-price-grid-component-master/index.html",
-      level: "newbies",
+      level: "newbie",
       image: "single-price-grid-component-master/design/desktop-preview.jpg"
   },
   {
       name: "Order summary card challenge",
       link: "order-summary-component-main/index.html",
-      level: "newbies",
+      level: "newbie",
       image: "order-summary-component-main/design/desktop-preview.jpg"
   },
   {
       name: "Stats preview card component challenge",
       link: "stats-preview-card-component-main/index.html",
-      level: "newbies",
+      level: "newbie",
       image: "stats-preview-card-component-main/design/desktop-preview.jpg"
   },
 ];
@@ -77,7 +77,7 @@ const data = [
 let displayData = document.getElementById("data");
 
 const listData = data.map((d, index) => {
-  return `<a href=${d.link} target="_blank" class="card" key=${index}>
+  return `<a href=${d.link} target="_blank" class="card ${d.level}" key=${index}>
             <figure>
                 <img src=${d.image} alt=${d.name} />
             </figure>
@@ -93,8 +93,29 @@ displayData.innerHTML = listData;
 
 // filter
 
-const filterData = data.filter(d => d.level === "newbie")
+// const filterData = data.filter(d => d.level === "newbie")
 
-const handleClick = document.getElementById("filter")
+// const handleClick = document.getElementById("filter")
 
-handleClick.addEventListener("click", filterData())
+// handleClick.addEventListener("click", filterData())
+
+const filterData = (value) => {
+    console.log(value)
+
+    let elements = document.querySelectorAll(".card")
+    elements.forEach((element) => {
+        if (value == "all") {
+            element.classList.remove("hide")
+        } else {
+            if (element.classList.contains(value)) {
+                element.classList.remove("hide")
+            } else {
+                element.classList.add("hide")
+            }
+        }
+    })
+}
+
+window.onload = () => {
+    filterData('all')
+}
