@@ -72,6 +72,12 @@ const data = [
       level: "newbie",
       image: "stats-preview-card-component-main/design/desktop-preview.jpg"
   },
+  {
+      name: "Social proof section challenge",
+      link: "social-proof-section-master/index.html",
+      level: "newbie",
+      image: "social-proof-section-master/design/desktop-design.jpg"
+  },
 ];
 
 let displayData = document.getElementById("data");
