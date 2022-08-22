@@ -78,9 +78,22 @@ const data = [
       level: "newbie",
       image: "social-proof-section-master/design/desktop-design.jpg"
   },
+  {
+      name: "Interactive rating component challenge",
+      link: "interactive-rating-component-main/index.html",
+      level: "newbie",
+      image: "interactive-rating-component-main/design/desktop-preview.jpg"
+  },
 ];
 
 let displayData = document.getElementById("data");
+// let displayBtn = document.getElementById("top_btn")
+
+// const listBtn = data.map((dt, index) => {
+//     return `
+//         <button class="btn_tag ${dt.level}" key=${index} onclick="filterData('${dt.level}')">${dt.level}</button>
+//     `
+// })
 
 const listData = data.map((d, index) => {
   return `<a href=${d.link} target="_blank" class="card ${d.level}" key=${index}>
@@ -106,7 +119,6 @@ displayData.innerHTML = listData;
 // handleClick.addEventListener("click", filterData())
 
 const filterData = (value) => {
-    console.log(value)
 
     let elements = document.querySelectorAll(".card")
     elements.forEach((element) => {
@@ -120,7 +132,21 @@ const filterData = (value) => {
             }
         }
     })
+
+    let btn = document.querySelectorAll(".btn_tag")
+    btn.forEach((b) => {
+        console.log(value.toUpperCase())
+        console.log(b.innerText, b)
+        if (value.toUpperCase() == b.innerText.toUpperCase()) {
+            b.classList.add("active")
+        } else {
+            b.classList.remove("active")
+        }
+    })
 }
+
+
+
 
 window.onload = () => {
     filterData('all')

@@ -57,6 +57,29 @@ nav a {
   row-gap: 50px;
 }
 
+.top {
+  display: flex;
+  gap: 10px;
+}
+
+.btn_tag {
+  background-color: var(--lightGray);
+  border: 1px solid var(--grayishBlue);
+  color: var(--grayishBlue);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.btn_tag.active {
+  background-color: red;
+}
+
 .card {
   background-color: #fff;
   border-radius: 10px;
