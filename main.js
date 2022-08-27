@@ -76,13 +76,19 @@ const data = [
       name: "Social proof section challenge",
       link: "social-proof-section-master/index.html",
       level: "newbie",
-      image: "social-proof-section-master/design/desktop-design.jpg"
+      image: "social-proof-section-master/design/desktop-preview.jpg"
   },
   {
       name: "Interactive rating component challenge",
       link: "interactive-rating-component-main/index.html",
       level: "newbie",
       image: "interactive-rating-component-main/design/desktop-preview.jpg"
+  },
+  {
+      name: "FAQ accordion card challenge",
+      link: "faq-accordion-card-main/index.html",
+      level: "newbie",
+      image: "faq-accordion-card-main/design/desktop-preview.jpg"
   },
 ];
 
