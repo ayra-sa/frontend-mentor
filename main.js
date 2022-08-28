@@ -90,16 +90,16 @@ const data = [
       level: "newbie",
       image: "faq-accordion-card-main/design/desktop-preview.jpg"
   },
+  {
+      name: "Article preview component challenge",
+      link: "article-preview-component-master/index.html",
+      level: "newbie",
+      image: "article-preview-component-master/design/desktop-preview.jpg"
+  },
 ];
 
 let displayData = document.getElementById("data");
-// let displayBtn = document.getElementById("top_btn")
 
-// const listBtn = data.map((dt, index) => {
-//     return `
-//         <button class="btn_tag ${dt.level}" key=${index} onclick="filterData('${dt.level}')">${dt.level}</button>
-//     `
-// })
 
 const listData = data.map((d, index) => {
   return `<a href=${d.link} target="_blank" class="card ${d.level}" key=${index}>
@@ -116,13 +116,7 @@ const listData = data.map((d, index) => {
 displayData.innerHTML = listData;
 
 
-// filter
 
-// const filterData = data.filter(d => d.level === "newbie")
-
-// const handleClick = document.getElementById("filter")
-
-// handleClick.addEventListener("click", filterData())
 
 const filterData = (value) => {
 
