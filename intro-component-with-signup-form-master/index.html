@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Learn to code by <br>watching others</h1>
+
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="content">
+        <div class="try">
+          <span><h2>Try it free 7 days</h2>then $20/mo. thereafter</span>
+        </div>
+
+        <form action="" id="form" name="myForm">
+          <div class="form_control">
+            <input type="text" name="first" id="first" placeholder="First Name" />
+            <small>Error</small>
+          </div>
+          <div class="form_control">
+            <input type="text" name="last" id="last" placeholder="Last Name" />
+            <small>Error</small>
+          </div>
+          <div class="form_control">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <small>Error</small>
+          </div>
+          <div class="form_control">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <small>Error</small>
+          </div>
+          <button type="submit" class="btn">CLAIM YOUR FREE TRIAL</button>
+          <!-- <input type="submit" class="btn" value="CLAIM YOUR FREE TRIAL" /> -->
+
+          <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </form>
+
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
