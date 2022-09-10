@@ -14,6 +14,7 @@
   --brightYellow: hsl(71, 73%, 54%);
   --lightGray: hsl(204, 43%, 93%);
   --grayishBlue: hsl(218, 22%, 67%);
+  --black: rgb(39, 36, 36);
 }
 
 /* VAR */
@@ -65,7 +66,7 @@ nav a {
 .btn_tag {
   background-color: var(--lightGray);
   border: 1px solid var(--grayishBlue);
-  color: var(--grayishBlue);
+  color: var(--black);
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 700;
@@ -99,8 +100,49 @@ nav a {
   display: none;
 }
 
-.card_detail {
+.card_detail, .card_link {
   padding: 20px;
+}
+
+.card_link {
+  display: flex;
+  column-gap: 20px;
+}
+
+.btn_primary, .btn_secondary {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: .3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.btn_primary {
+  background-color: var(--cyan);
+  color: var(--lightGray);
+}
+
+.btn_primary:hover {
+  background-color: var(--darkCyan);
+}
+
+.btn_secondary {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.btn_secondary:hover {
+  color: var(--lightGray);
+  background-color: var(--black);
 }
 
 .card_detail h2 {
