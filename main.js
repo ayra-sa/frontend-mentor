@@ -136,6 +136,14 @@ const data = [
       link: 'https://ayra-sa.github.io/frontend-mentor/intro-component-with-signup-form-master/index.html'
   },
   {
+      name: "Ping coming soon page challenge",
+    //   link: "intro-component-with-signup-form-master/index.html",
+      level: "newbie",
+      image: "ping-coming-soon-page-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/ping-coming-soon-page-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/ping-coming-soon-page-master/index.html'
+  },
+  {
       name: "Base Apparel coming soon page challenge",
     //   link: "intro-component-with-signup-form-master/index.html",
       level: "newbie",
