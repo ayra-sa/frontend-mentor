@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* VARIABLE */
+
+:root {
+  --font: "Libre Franklin", sans-serif;
+  --blue: hsl(223, 87%, 63%);
+  --blueHover: hsl(223, 73%, 68%);
+  --paleBlue: hsl(223, 100%, 88%);
+  --lightRed: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+/* VARIABLE */
+
+
+body {
+    font-family: var(--font);
+    font-size: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 90%;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.brand {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: var(--gray);
+}
+
+.title h1 {
+    font-size: inherit;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 40px 0 80px 0;
+}
+
+small {
+    display: none;
+}
+
+form input, form button {
+    flex: 1;
+    padding: 20px;
+    font-family: inherit;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+form input {
+    border: 1px solid var(--paleBlue);
+    font-size: .8em;
+}
+
+form button {
+    font-size: inherit;
+    border: none;
+    background-color: var(--blue);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    color: #fff;
+    border-radius: 50px;
+    transition: .3s ease;
+    position: relative;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+form button:hover {
+    background-color: var(--blueHover);
+}
+
+form.error input {
+    border-color: var(--lightRed);
+}
+
+form.success input {
+    border-color: aqua;
+}
+
+form.error small {
+    display: block;
+    color: var(--lightRed);
+}
+
+form.success small {
+    display: none;
+}
+
+.socmed {
+    margin-top: 120px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.socmed a {
+    color: var(--blue);
+    border: 1px solid var(--paleBlue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: .8em;
+}
+
+footer {
+    font-size: .7em;
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 50%;
+    }
+
+    form {
+        flex-direction: row;
+        position: relative;
+    }
+
+    form input {
+        flex: 2;
+    }
+
+    small {
+        position: absolute;
+        bottom: -50%;
+        left: 20px;
+    }
+}
