@@ -1,7 +1,6 @@
 const data = [
   {
     name: "3-column preview card component challenge",
-    // link: "3-column-preview-card-component-main/index.html",
     level: "newbie",
     image: "3-column-preview-card-component-main/design/desktop-preview.jpg",
     repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/3-column-preview-card-component-main',
@@ -9,7 +8,6 @@ const data = [
   },
   {
     name: "Four card feature section challenge",
-    // link: "four-card-feature-section-master/index.html",
     level: "newbie",
     image: "four-card-feature-section-master/design/desktop-preview.jpg",
     repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/four-card-feature-section-master',
@@ -17,23 +15,20 @@ const data = [
   },
   {
     name: "Fylo landing page with two column layout challenge",
-    // link: "fylo-landing-page-with-two-column-layout-master/index.html",
-    level: "newbie",
+    level: "junior",
     image: "fylo-landing-page-with-two-column-layout-master/design/desktop-preview.jpg",
     repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-landing-page-with-two-column-layout-master',
     link: 'https://ayra-sa.github.io/frontend-mentor/fylo-landing-page-with-two-column-layout-master/index.html'
   },
   {
       name: "Huddle landing page with curved sections challenge",
-    //   link: "huddle-landing-page-with-curved-sections-master/index.html",
-      level: "newbie",
+      level: "junior",
       image: "huddle-landing-page-with-curved-sections-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/huddle-landing-page-with-curved-sections-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/huddle-landing-page-with-curved-sections-master/index.html'
   },
   {
       name: "Huddle landing page with single introductory challenge",
-    //   link: "huddle-landing-page-with-single-introductory-section-master/index.html",
       level: "newbie",
       image: "huddle-landing-page-with-single-introductory-section-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/huddle-landing-page-with-single-introductory-section-master',
@@ -41,7 +36,6 @@ const data = [
   },
   {
       name: "NFT preview card component challenge",
-    //   link: "nft-preview-card-component-main/index.html",
       level: "newbie",
       image: "nft-preview-card-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/nft-preview-card-component-main',
@@ -49,7 +43,6 @@ const data = [
   },
   {
       name: "Product preview card component challenge",
-    //   link: "product-preview-card-component-main/index.html",
       level: "newbie",
       image: "product-preview-card-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/product-preview-card-component-main',
@@ -57,7 +50,6 @@ const data = [
   },
   {
       name: "Profile card component challenge",
-    //   link: "profile-card-component-main/index.html",
       level: "newbie",
       image: "profile-card-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/profile-card-component-main',
@@ -65,7 +57,6 @@ const data = [
   },
   {
       name: "QR code component challenge",
-    //   link: "qr-code-component-main/index.html",
       level: "newbie",
       image: "qr-code-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/qr-code-component-main',
@@ -73,7 +64,6 @@ const data = [
   },
   {
       name: "Single price grid component challenge",
-    //   link: "single-price-grid-component-master/index.html",
       level: "newbie",
       image: "single-price-grid-component-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/single-price-grid-component-master',
@@ -81,7 +71,6 @@ const data = [
   },
   {
       name: "Order summary card challenge",
-    //   link: "order-summary-component-main/index.html",
       level: "newbie",
       image: "order-summary-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/order-summary-component-main',
@@ -89,7 +78,6 @@ const data = [
   },
   {
       name: "Stats preview card component challenge",
-    //   link: "stats-preview-card-component-main/index.html",
       level: "newbie",
       image: "stats-preview-card-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/stats-preview-card-component-main',
@@ -97,7 +85,6 @@ const data = [
   },
   {
       name: "Social proof section challenge",
-    //   link: "social-proof-section-master/index.html",
       level: "newbie",
       image: "social-proof-section-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/social-proof-section-master',
@@ -105,7 +92,6 @@ const data = [
   },
   {
       name: "Interactive rating component challenge",
-    //   link: "interactive-rating-component-main/index.html",
       level: "newbie",
       image: "interactive-rating-component-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/interactive-rating-component-main',
@@ -113,7 +99,6 @@ const data = [
   },
   {
       name: "FAQ accordion card challenge",
-    //   link: "faq-accordion-card-main/index.html",
       level: "newbie",
       image: "faq-accordion-card-main/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/faq-accordion-card-main',
@@ -121,7 +106,6 @@ const data = [
   },
   {
       name: "Article preview component challenge",
-    //   link: "article-preview-component-master/index.html",
       level: "newbie",
       image: "article-preview-component-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/article-preview-component-master',
@@ -129,7 +113,6 @@ const data = [
   },
   {
       name: "Intro component with sign up form challenge",
-    //   link: "intro-component-with-signup-form-master/index.html",
       level: "newbie",
       image: "intro-component-with-signup-form-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/intro-component-with-signup-form-master',
@@ -137,7 +120,6 @@ const data = [
   },
   {
       name: "Ping coming soon page challenge",
-    //   link: "intro-component-with-signup-form-master/index.html",
       level: "newbie",
       image: "ping-coming-soon-page-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/ping-coming-soon-page-master',
@@ -145,11 +127,17 @@ const data = [
   },
   {
       name: "Base Apparel coming soon page challenge",
-    //   link: "intro-component-with-signup-form-master/index.html",
       level: "newbie",
       image: "base-apparel-coming-soon-master/design/desktop-preview.jpg",
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/base-apparel-coming-soon-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/base-apparel-coming-soon-master/index.html'
+  },
+  {
+      name: "Fylo dark theme landing page challenge",
+      level: "junior",
+      image: "fylo-dark-theme-landing-page-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-dark-theme-landing-page-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/fylo-dark-theme-landing-page-master/index.html'
   },
 ];
 
