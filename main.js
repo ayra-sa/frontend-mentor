@@ -139,6 +139,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-dark-theme-landing-page-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/fylo-dark-theme-landing-page-master/index.html'
   },
+  {
+      name: "Clipboard landing page challenge",
+      level: "junior",
+      image: "clipboard-landing-page-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/clipboard-landing-page-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/clipboard-landing-page-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
