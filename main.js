@@ -146,6 +146,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/clipboard-landing-page-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/clipboard-landing-page-master/index.html'
   },
+  {
+      name: "Testimonials grid section challenge",
+      level: "junior",
+      image: "testimonials-grid-section-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/testimonials-grid-section-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/testimonials-grid-section-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
