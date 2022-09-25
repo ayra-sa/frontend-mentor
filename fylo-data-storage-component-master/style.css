@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* VARAIBLE */
+
+:root {
+  --font: "Raleway", sans-serif;
+  --gradient: #ffa399 to #ff4d97;
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+}
+
+/* VARAIBLE */
+
+
+body {
+    font-family: var(--font);
+    /* background-color: var(--veryDarkBlue); */
+    font-size: 14px;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    line-height: 23px;
+    background: url(images/bg-mobile.png) center no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: calc(100% - 10%);
+    margin-inline: auto;
+}
+
+.fylo, .detail {
+    background-color: var(--darkBlue);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.fylo {
+    border-radius: 8px 90px 8px 8px;
+    -webkit-border-radius: 8px 90px 8px 8px;
+    -moz-border-radius: 8px 90px 8px 8px;
+    -ms-border-radius: 8px 90px 8px 8px;
+    -o-border-radius: 8px 90px 8px 8px;
+}
+
+.detail {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.fylo_link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fylo_link a {
+    background-color: var(--veryDarkBlue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.detail .top {
+    letter-spacing: .09em;
+}
+
+.detail .top span {
+    font-weight: 700;
+}
+
+.tooltip {
+    position: absolute;
+    /* background-color: white; */
+    color: var(--veryDarkBlue);
+    bottom: -15%;
+    width: 100%;
+    right: 0;
+}
+
+.tooltip p {
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.tooltip span {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.bar {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.progress_bar {
+    background-color: var(--veryDarkBlue);
+    height: 20px;
+    border-radius: 50px;
+    position: relative;
+    padding: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.progress_bar-front {
+    background: rgb(255,163,153);
+    background: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+    width: calc(100% - 20%);
+    height: 100%;
+    border-radius: 50px;
+    position: relative;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.progress_bar-front::after {
+    content: "";
+    inset: 1.4px 2.5px 2px auto;
+    position: absolute;
+    width: 12px;
+    height: 80%;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bar_text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.attribution {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+
+
+@media (min-width: 1280px) {
+    body {
+        background: url(images/bg-desktop.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        width: calc(100% - 30%);
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: flex-end;
+    }
+
+    .fylo {
+        flex: 1;
+        padding: 50px;
+    }
+
+    .detail {
+        flex: 2;
+        text-align: left;
+    }
+
+    .tooltip {
+        inset: -20% 6% auto auto;
+        width: unset;
+    }
+
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        inset: auto 0 -30% auto;
+        border-top: 20px solid transparent;
+        border-right: 30px solid white;
+        border-bottom: 20px solid transparent;
+    }
+
+    .bar {
+        margin-bottom: 0;
+    }
+    
+}

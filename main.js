@@ -153,6 +153,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/testimonials-grid-section-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/testimonials-grid-section-main/index.html'
   },
+  {
+      name: "Fylo data storage component challenge",
+      level: "junior",
+      image: "fylo-data-storage-component-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-data-storage-component-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/fylo-data-storage-component-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
@@ -205,8 +212,6 @@ const filterData = (value) => {
         }
     })
 }
-
-
 
 
 window.onload = () => {
