@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Pricing</h1>
+
+      <div class="switch">
+        <span class="switch_text-annually"> Annually </span>
+        <label class="switch_btn">
+          <input type="checkbox" id="checbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span class="switch_text-monthly"> Monthly </span>
+      </div>
+
+      <div class="card_wrapper">
+        <div class="card">
+          <h2>Basic</h2>
+          <h1 class="price monthly">19.99</h1>
+          <h1 class="price annually">199.99</h1>
+
+          <ul>
+            <li>
+              <p>500 GB Storage</p>
+            </li>
+            <li>
+              <p>2 Users Allowed</p>
+            </li>
+            <li>
+              <p>Send up to 3 GB</p>
+            </li>
+          </ul>
+
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="card">
+          <h2>Professional</h2>
+          <h1 class="price monthly">24.99</h1>
+          <h1 class="price annually">249.99</h1>
+
+          <ul>
+            <li>
+              <p>1 TB Storage</p>
+            </li>
+            <li>
+              <p>5 Users Allowed</p>
+            </li>
+            <li>
+              <p>Send up to 10 GB</p>
+            </li>
+          </ul>
+
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="card">
+          <h2>Master</h2>
+          <h1 class="price monthly">39.99</h1>
+          <h1 class="price annually">399.99</h1>
+
+          <ul>
+            <li>
+              <p>2 TB Storage</p>
+            </li>
+            <li>
+              <p>10 Users Allowed</p>
+            </li>
+            <li>
+              <p>Send up to 20 GB</p>
+            </li>
+          </ul>
+
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ayra-sa</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

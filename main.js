@@ -160,6 +160,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-data-storage-component-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/fylo-data-storage-component-master/index.html'
   },
+  {
+      name: "Pricing component with toggle challenge",
+      level: "junior",
+      image: "pricing-component-with-toggle-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/pricing-component-with-toggle-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/pricing-component-with-toggle-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
