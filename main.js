@@ -167,6 +167,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/pricing-component-with-toggle-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/pricing-component-with-toggle-master/index.html'
   },
+  {
+      name: "Project tracking intro component challenge",
+      level: "junior",
+      image: "project-tracking-intro-component-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/project-tracking-intro-component-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/project-tracking-intro-component-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
