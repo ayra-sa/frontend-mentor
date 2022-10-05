@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$fontHeading: "DM Serif Display", serif;
+$font: "Karla", sans-serif;
+$darkViolet: rgb(45, 38, 64);
+$grayishBlue: hsl(216, 30%, 68%);
+$veryDarkViolet: hsl(270, 9%, 17%);
+$varkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  font-size: 1em;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2 {
+  font-family: $fontHeading;
+  font-weight: 400;
+  // color: $veryDarkViolet;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-weight: 700;
+  background-color: transparent;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.btn_primary {
+  border: 1px solid $veryLightGray;
+  color: $veryLightGray;
+
+  &:hover {
+    background-color: $veryLightGray;
+    color: $darkViolet;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+nav {
+  padding: 20px 0;
+  // position: relative;
+
+  .nav {
+    &_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_right {
+      position: absolute;
+      transition: 0.3s ease;
+      left: -100%;
+      width: 100%;
+      // left: 0;
+      z-index: 2;
+      top: 75px;
+      background-color: $veryDarkViolet;
+      //display: none;
+      color: $veryLightGray;
+      text-transform: uppercase;
+      height: 100%;
+      padding: 40px 0;
+      text-align: center;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    &_menu {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-weight: 700;
+    }
+
+    &_btn {
+      border: 1px solid $veryLightGray;
+      background-color: transparent;
+      color: $veryLightGray;
+      margin-top: 40px;
+      width: 80%;
+
+      &:hover {
+        background-color: $darkViolet;
+        color: $veryLightGray;
+      }
+    }
+
+    &_mobile {
+      cursor: pointer;
+
+      &.active .open {
+        display: none;
+      }
+
+      &.active .close {
+        display: block;
+      }
+
+      .close {
+        display: none;
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  // background-color: $darkViolet;
+  background: $darkViolet;
+  color: $veryLightGray;
+  padding-bottom: 100px;
+
+  .mobile img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &_wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &_left {
+    position: relative;
+
+    p {
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  &_right {
+    .desktop {
+      display: none;
+    }
+  }
+}
+
+.different {
+  text-align: center;
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px;
+
+    .list {
+      flex: 1;
+
+      h2 {
+        margin: 20px 0 10px 0;
+        color: $veryDarkViolet;
+      }
+    }
+  }
+}
+
+.find_out {
+  background-color: $darkViolet;
+  color: $veryLightGray;
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 100px;
+  position: relative;
+
+  h1 {
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    content: url(../images/bg-pattern-how-we-work-mobile.svg);
+    position: absolute;
+    inset: 0 0 0 auto;
+    // width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  // background-color: $veryLightGray;
+  padding: 80px 0;
+  position: relative;
+
+  &::before {
+    content: url(../images/bg-pattern-footer-mobile.svg);
+    position: absolute;
+    inset: 0 auto auto 0;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: $veryLightGray;
+    z-index: -2;
+  }
+
+  .footer {
+    &_top {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $grayishBlue;
+
+      &-socmed {
+        margin-top: 20px;
+        display: flex;
+        place-content: center;
+        gap: 15px;
+        color: $varkGrayishViolet;
+        font-size: 1.3em;
+
+        a {
+            transition: .3s ease;
+            -webkit-transition: .3s ease;
+            -moz-transition: .3s ease;
+            -ms-transition: .3s ease;
+            -o-transition: .3s ease;
+        
+            &:hover {
+                color: $darkViolet;
+            }
+        }
+      }
+    }
+
+    &_btm {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &-menu {
+        flex: 1;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        p {
+          color: $varkGrayishViolet;
+          margin-bottom: 40px;
+        }
+
+        ul li {
+          color: $veryDarkViolet;
+          margin-bottom: 10px;
+
+          a {
+            transition: .3s ease;
+            border-bottom: 1px solid transparent;
+            -webkit-transition: .3s ease;
+            -moz-transition: .3s ease;
+            -ms-transition: .3s ease;
+            -o-transition: .3s ease;
+            
+            &:hover {
+                border-bottom-color: $darkViolet;
+            }
+        }
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 80%;
+  }
+
+  nav {
+    .nav {
+      &_wrap {
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &_right {
+        position: static;
+        left: unset;
+        top: unset;
+        color: $veryDarkViolet;
+        background-color: transparent;
+        padding: unset;
+        display: flex;
+        width: unset;
+        height: unset;
+        align-items: center;
+      }
+
+      &_btn {
+        margin-top: unset;
+        width: unset;
+        border-color: $veryDarkViolet;
+        color: $veryDarkViolet;
+        margin-left: 30px;
+      }
+
+      &_menu {
+        display: flex;
+        flex-direction: row;
+        row-gap: unset;
+      }
+
+      &_mobile {
+        display: none;
+      }
+    }
+  }
+
+  .hero {
+    background: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 25% 0;
+      background-color: $darkViolet;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+
+    .hero {
+      &_this {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: url(../images/bg-pattern-intro-left-desktop.svg);
+          inset: auto auto -25% 0;
+        }
+
+        &::after {
+          position: absolute;
+          content: url(../images/bg-pattern-intro-right-desktop.svg);
+          inset: 0 0 auto auto;
+        }
+      }
+
+      &_wrap {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10% 0 0 0;
+      }
+
+      &_left {
+        text-align: left;
+
+        &::before {
+            content: "";
+            width: 40%;
+            height: 1px;
+            background-color: $veryLightGray;
+            display: block;
+            margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  .different {
+    text-align: left;
+
+    h1 {
+
+        &::before {
+            content: "";
+            display: block;
+            width: 20%;
+            height: 1px;
+            background-color: $darkViolet;
+            margin-bottom: 60px;
+        }
+    }
+
+      &_list {
+        flex-direction: row;
+      }
+  }
+
+  .find_out {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding-inline: 60px;
+    gap: 50px;
+
+    h1 {
+        flex: 1;
+        margin-bottom: unset;
+    }
+  }
+
+
+  footer {
+    text-align: left;
+
+    .footer_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer_btm {
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+    }
+  }
+}

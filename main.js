@@ -174,6 +174,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/project-tracking-intro-component-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/project-tracking-intro-component-master/index.html'
   },
+  {
+      name: "Insure landing page challenge",
+      level: "junior",
+      image: "insure-landing-page-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/insure-landing-page-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/insure-landing-page-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
