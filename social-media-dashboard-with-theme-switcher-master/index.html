@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav_wrap">
+          <div class="nav_left">
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+          </div>
+
+          <div class="nav_right">
+            <span>Dark Mode</span>
+            <div class="nav_toggle">
+              <button onclick="check()" id="checbox">
+                <div class="round"></div>
+              </button>
+              <!-- <input type="checkbox" id="checbox" onclick="check()" ; />
+              <span class="slider round"></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="socmed">
+      <div class="container">
+        <div class="socmed_wrap">
+          <div class="card fb">
+            <div class="top">
+              <img src="images/icon-facebook.svg" alt="facebook" />
+              <span> @nathanf </span>
+            </div>
+            <h1>1987</h1>
+            <p>Followers</p>
+
+            <div class="update up">
+              <img src="images/icon-up.svg" alt="up" />
+              <span> 12 Today </span>
+            </div>
+          </div>
+          <div class="card tw">
+            <div class="top">
+              <img src="images/icon-twitter.svg" alt="twitter" />
+              <span> @nathanf </span>
+            </div>
+            <h1>1044</h1>
+            <p>Followers</p>
+
+            <div class="update up">
+              <img src="images/icon-up.svg" alt="up" />
+              <span> 99 Today </span>
+            </div>
+          </div>
+          <div class="card ig">
+            <div class="top">
+              <img src="images/icon-instagram.svg" alt="icon-instagram" />
+              <span> @realnathanf </span>
+            </div>
+            <h1>11k</h1>
+            <p>Followers</p>
+
+            <div class="update up">
+              <img src="images/icon-up.svg" alt="up" />
+              <span> 1099 Today </span>
+            </div>
+          </div>
+          <div class="card yt">
+            <div class="top">
+              <img src="images/icon-youtube.svg" alt="youtube" />
+              <span> Nathan F. </span>
+            </div>
+            <h1>8239</h1>
+            <p>Subscribers</p>
+
+            <div class="update down">
+              <img src="images/icon-down.svg" alt="down" />
+              <span> 144 Today </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container">
+        <h2>Overview - Today</h2>
+
+        <div class="overview_wrap">
+          <div class="overview_box">
+            <div class="top">
+              <p>Page Views</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>87</h2>
+
+              <div class="update up">
+                <img src="images/icon-up.svg" alt="up" />
+                <span> 3% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>52</h2>
+
+              <div class="update down">
+                <img src="images/icon-down.svg" alt="down" />
+                <span> 2% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>5462</h2>
+
+              <div class="update up">
+                <img src="images/icon-up.svg" alt="up" />
+                <span> 2257% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Profile Views</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>52k</h2>
+
+              <div class="update up">
+                <img src="images/icon-up.svg" alt="up" />
+                <span> 1375% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Retweets</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>117</h2>
+
+              <div class="update up">
+                <img src="images/icon-up.svg" alt="up" />
+                <span> 303% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>507</h2>
+
+              <div class="update up">
+                <img src="images/icon-up.svg" alt="up" />
+                <span> 553% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>107</h2>
+
+              <div class="update down">
+                <img src="images/icon-down.svg" alt="down" />
+                <span> 19% </span>
+              </div>
+            </div>
+          </div>
+          <div class="overview_box">
+            <div class="top">
+              <p>Total Views</p>
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </div>
+
+            <div class="bottom">
+              <h2>1407</h2>
+
+              <div class="update down">
+                <img src="images/icon-down.svg" alt="down" />
+                <span> 12% </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/ayra-sa">ayra-sa</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

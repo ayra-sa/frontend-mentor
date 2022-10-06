@@ -181,6 +181,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/insure-landing-page-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/insure-landing-page-master/index.html'
   },
+  {
+      name: "Social media dashboard with theme switcher challenge",
+      level: "junior",
+      image: "social-media-dashboard-with-theme-switcher-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/social-media-dashboard-with-theme-switcher-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/social-media-dashboard-with-theme-switcher-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
