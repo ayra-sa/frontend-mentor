@@ -188,6 +188,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/social-media-dashboard-with-theme-switcher-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/social-media-dashboard-with-theme-switcher-master/index.html'
   },
+  {
+      name: "Coding bootcamp testimonials slider challenge",
+      level: "junior",
+      image: "coding-bootcamp-testimonials-slider-master/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/coding-bootcamp-testimonials-slider-master',
+      link: 'https://ayra-sa.github.io/frontend-mentor/coding-bootcamp-testimonials-slider-master/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
