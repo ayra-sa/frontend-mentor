@@ -195,6 +195,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/coding-bootcamp-testimonials-slider-master',
       link: 'https://ayra-sa.github.io/frontend-mentor/coding-bootcamp-testimonials-slider-master/index.html'
   },
+  {
+      name: "Loopstudios landing page challenge",
+      level: "junior",
+      image: "loopstudios-landing-page-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/loopstudios-landing-page-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/loopstudios-landing-page-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
