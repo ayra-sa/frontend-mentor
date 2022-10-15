@@ -202,6 +202,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/loopstudios-landing-page-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/loopstudios-landing-page-main/index.html'
   },
+  {
+      name: "Blogr landing page challenge",
+      level: "junior",
+      image: "blogr-landing-page-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/blogr-landing-page-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/blogr-landing-page-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");

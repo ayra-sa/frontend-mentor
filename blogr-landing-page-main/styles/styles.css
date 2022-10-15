@@ -1,0 +1,727 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  /* Remove default margin on everything */
+  margin: 0;
+  /* Remove default padding on everything */
+  padding: 0;
+  /* Calc `em` based line height, bigger line height for smaller font size and smaller line height for bigger font size: https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/ */
+  line-height: calc(0.25rem + 1em + 0.25rem);
+}
+
+/* Use a more-intuitive box-sizing model on everything */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove border and set sensible defaults for backgrounds, on all elements except fieldset progress and meter */
+*:where(:not(fieldset):not(progress):not(meter)) {
+  border-width: 0;
+  border-style: solid;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+html {
+  /* Allow percentage-based heights in the application */
+  block-size: 100%;
+  /* Making sure text size is only controlled by font-size */
+  -webkit-text-size-adjust: none;
+}
+
+/* Smooth scrolling for users that don't prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  /* https://marco.org/2012/11/15/text-rendering-optimize-legibility */
+  text-rendering: optimizeSpeed;
+  /* Allow percentage-based heights in the application */
+  min-block-size: 100%;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter#example_2 */
+  /* scrollbar-gutter: stable both-edges; Removed until this bug is fixed: https://bugs.chromium.org/p/chromium/issues/detail?id=1318404#c2 */
+}
+
+/* Improve media defaults */
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, svg, video) {
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+/* Remove stroke and set fill colour to the inherited font colour */
+:where(svg) {
+  stroke: none;
+  fill: currentColor;
+}
+
+/* SVG's without a fill attribute */
+:where(svg):where(:not([fill])) {
+  /* Remove fill and set stroke colour to the inherited font colour */
+  stroke: currentColor;
+  fill: none;
+  /* Rounded stroke */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Set a size for SVG's without a width attribute */
+:where(svg):where(:not([width])) {
+  inline-size: 5rem;
+}
+
+/* Remove built-in form typography styles */
+:where(input, button, textarea, select),
+:where(input[type="file"])::-webkit-file-upload-button {
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+/* Change textarea resize to vertical only and block only if the browser supports that */
+:where(textarea) {
+  resize: vertical;
+}
+
+@supports (resize: block) {
+  :where(textarea) {
+    resize: block;
+  }
+}
+
+/* Avoid text overflows */
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/* Fix h1 font size inside article, aside, nav, and section */
+h1 {
+  font-size: 2em;
+}
+
+/* Position list marker inside */
+:where(ul, ol) {
+  list-style-position: inside;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+:where(ul, ol)[role="list"] {
+  list-style: none;
+}
+
+/* More readable underline style for anchor tags without a class. This could be set on anchor tags globally, but it can cause conflicts. */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make it clear that interactive elements are interactive */
+:where(a[href], area, button, input, label[for], select, summary, textarea, [tabindex]:not([tabindex*="-"])) {
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+:where(input[type="file"]) {
+  cursor: auto;
+}
+
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  cursor: pointer;
+}
+
+/* Animate focus outline */
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    -webkit-transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+  }
+  :where(:not(:active)):focus-visible {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+}
+
+:where(:not(:active)):focus-visible {
+  outline-offset: 5px;
+}
+
+/* Make sure users can't select button text */
+:where(button, button[type], input[type="button"], input[type="submit"], input[type="reset"]),
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+/* Disabled cursor for disabled buttons */
+:where(button, button[type], input[type="button"], input[type="submit"], input[type="reset"])[disabled] {
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1em;
+  color: #3f4164;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+.flex_center, nav .nav_wrap, nav .nav_left, nav .nav_menu b, .hero .hero_btn, .designed_wrap, .free_wrap, footer .footer_wrap, .state_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section, .designed, .state, .free, footer {
+  position: relative;
+  margin-top: 100px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.btn_primary {
+  background-color: white;
+  border-radius: 50px;
+  color: #ff525d;
+  font-weight: 600;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.btn_primary:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.btn_secondary {
+  border: 1px solid white;
+  border-radius: 50px;
+  font-weight: 600;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.btn_secondary:hover {
+  background-color: white;
+  color: #ff3d54;
+}
+
+nav {
+  position: absolute;
+  inset: 0 0 auto 0;
+  padding: 20px 0;
+  z-index: 7;
+}
+
+nav .nav_wrap {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav_content {
+  position: absolute;
+  background-color: white;
+  inset: 12vh 20px 20px 20px;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: -1px 6px 10px 2px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: -1px 6px 10px 2px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -1px 6px 10px 2px rgba(0, 0, 0, 0.45);
+  transform: translateX(-150%);
+  transition: 0.3s ease;
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+nav .nav_content.active {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+nav .nav_menu-dropdown:hover .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav_menu b {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+nav .nav_menu b::after {
+  content: url(../images/icon-arrow-dark.svg);
+}
+
+nav .nav_menu .dropdown {
+  background-color: #ededed;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+  transition: 1s ease;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav .nav_menu .dropdown a {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+nav .nav_menu .dropdown a:hover {
+  font-weight: 600;
+}
+
+nav .nav_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+nav .nav_btn .btn_primary {
+  position: relative;
+  color: white;
+  background: #ff8f70;
+  background: linear-gradient(190deg, #ff3d54 0%, #ff8f70 100%);
+  width: 40%;
+  margin-inline: auto;
+}
+
+nav .nav_mobile {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav_mobile .close {
+  display: none;
+}
+
+nav .nav_mobile.active .open {
+  display: none;
+}
+
+nav .nav_mobile.active .close {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  background: url(../images/bg-pattern-intro-mobile.svg) center no-repeat;
+  padding: 40% 0;
+  color: white;
+  border-bottom-left-radius: 100px;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  inset: 0;
+  z-index: -1;
+  border-bottom-left-radius: 100px;
+  position: absolute;
+  background: #ff8f70;
+  background: linear-gradient(190deg, #ff8f70 0%, #ff3d54 100%);
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.hero .hero_btn {
+  margin-top: 40px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.designed {
+  text-align: center;
+}
+
+.designed_wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.designed_wrap .content {
+  margin-bottom: 40px;
+}
+
+.designed_wrap .content h2 {
+  margin-bottom: 20px;
+}
+
+.state {
+  text-align: center;
+  padding-bottom: 20%;
+  color: white;
+  background: url(../images/bg-pattern-circles.svg) no-repeat center;
+  background-size: contain;
+}
+
+.state::after {
+  content: "";
+  position: absolute;
+  inset: 30% 0 0 0;
+  background-color: #2c2d3f;
+  z-index: -1;
+  border-radius: 0 100px 0 100px;
+  -webkit-border-radius: 0 100px 0 100px;
+  -moz-border-radius: 0 100px 0 100px;
+  -ms-border-radius: 0 100px 0 100px;
+  -o-border-radius: 0 100px 0 100px;
+}
+
+.state h2 {
+  margin-bottom: 20px;
+}
+
+.free {
+  text-align: center;
+}
+
+.free_wrap {
+  gap: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.free_wrap .content {
+  margin-bottom: 40px;
+}
+
+.free_wrap .content h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #25252d;
+  padding: 10% 0;
+  color: white;
+  border-top-right-radius: 100px;
+}
+
+footer .footer_wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+footer .footer_menu li:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+footer .footer_menu a {
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+footer .footer_menu a:hover {
+  border-color: white;
+}
+
+.attribution {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 80%;
+  }
+  nav .nav_wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .nav_left {
+    width: 100%;
+  }
+  nav .nav_content {
+    position: static;
+    inset: unset;
+    min-height: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    padding: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    width: 100%;
+    padding-left: 60px;
+    transform: unset;
+    background-color: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+  }
+  nav .nav_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  nav .nav_menu-dropdown b {
+    margin-bottom: unset;
+  }
+  nav .nav_menu-dropdown b::after {
+    content: url(../images/icon-arrow-light.svg);
+  }
+  nav .nav_menu-dropdown .dropdown {
+    position: absolute;
+    margin-top: 0;
+    background-color: white;
+    color: #25252d;
+    text-align: left;
+    width: 15%;
+    padding-inline: 20px;
+  }
+  nav .nav_btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: unset;
+    border-top: unset;
+    margin-top: unset;
+  }
+  nav .nav_btn .btn_primary {
+    width: unset;
+    background: white;
+    color: #ff3d54;
+  }
+  nav .nav_mobile {
+    display: none;
+  }
+}
+
+.hero {
+  padding: unset;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-content: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.designed_wrap {
+  text-align: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 100vh;
+}
+
+.designed_left {
+  width: 50%;
+}
+
+.designed_right img {
+  position: absolute;
+  inset: 0 -20% 0 auto;
+}
+
+.state {
+  padding-bottom: unset;
+}
+
+.state::after {
+  content: "";
+  inset: 12% 0;
+}
+
+.state_wrap {
+  text-align: left;
+}
+
+.state_left, .state_right {
+  width: 50%;
+}
+
+.free_wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  place-content: center;
+  min-height: 100vh;
+  text-align: left;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.free_left img {
+  position: absolute;
+  inset: 0 auto 0 -20%;
+}
+
+.free_right {
+  width: 50%;
+}
+
+footer .footer_wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+footer .footer_wrap .brand {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+footer .footer_menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .footer_menu li:not(:first-child) {
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=styles.css.map */
