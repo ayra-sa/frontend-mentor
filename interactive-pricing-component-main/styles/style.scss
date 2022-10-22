@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+// VARIABLES
+
+$font: "Manrope", sans-serif;
+
+// PRIMARY
+$softCyan-FullSliderBar: hsl(174, 77%, 80%);
+$strongCyan-SliderBackround: hsl(174, 86%, 45%);
+$lightGrayishRed-DiscountBackground: hsl(14, 92%, 95%);
+$lightRed-DiscountText: hsl(15, 100%, 70%);
+$paleBlue-CTAText: hsl(226, 100%, 87%);
+
+// NEUTRAL
+$white-PricingComponentBackground: hsl(0, 0%, 100%);
+$veryPaleBlue-MainBackground: hsl(230, 100%, 99%);
+$lightGrayishBlue-EmptySliderBar: hsl(224, 65%, 95%);
+$lightGrayishBlue-ToggleBackground: hsl(223, 50%, 87%);
+$grayishBlue-Text: hsl(225, 20%, 60%);
+$darkDesaturatedBlue-TextCTABackground: hsl(227, 35%, 25%);
+
+// VARIABLES
+
+
+@import "reset";
+
+body {
+    font-family: $font;
+    font-size: 15px;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $veryPaleBlue-MainBackground;
+    color: $darkDesaturatedBlue-TextCTABackground;
+}
+
+.container {
+    max-width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin-top: 60px;
+    background-color: $white-PricingComponentBackground;
+    box-shadow: 0 0 5px #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    &_price {
+        margin: 20px 0;
+        @extend .flex_center;
+        place-content: center;
+
+        &::after {
+            content: "/month";
+        }
+    }
+
+    &_list {
+        margin: 40px 0 20px 0;
+
+        li {
+            @extend .flex_center;
+            place-content: center;
+            margin-bottom: 8px;
+    
+            &::before {
+                content: url(../images/icon-check.svg);
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.btn {
+    background-color: $darkDesaturatedBlue-TextCTABackground;
+    color: $lightGrayishBlue-ToggleBackground;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 800;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}

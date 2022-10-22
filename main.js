@@ -209,6 +209,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/blogr-landing-page-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/blogr-landing-page-main/index.html'
   },
+  {
+      name: "Crowdfunding product page challenge",
+      level: "junior",
+      image: "crowdfunding-product-page-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/crowdfunding-product-page-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/crowdfunding-product-page-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
