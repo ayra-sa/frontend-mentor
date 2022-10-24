@@ -216,6 +216,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/crowdfunding-product-page-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/crowdfunding-product-page-main/index.html'
   },
+  {
+      name: "Sunnyside agency landing page challenge",
+      level: "junior",
+      image: "sunnyside-agency-landing-page-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/sunnyside-agency-landing-page-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/sunnyside-agency-landing-page-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
