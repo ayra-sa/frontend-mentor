@@ -223,6 +223,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/sunnyside-agency-landing-page-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/sunnyside-agency-landing-page-main/index.html'
   },
+  {
+      name: "Time tracking dashboard challenge",
+      level: "junior",
+      image: "time-tracking-dashboard-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/time-tracking-dashboard-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/time-tracking-dashboard-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
