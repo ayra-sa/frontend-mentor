@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+// VARIABLES
+
+$font: "Space Mono", monospace;
+$StrongCyan: hsl(172, 67%, 45%);
+$VeryDarkCyan: hsl(183, 100%, 15%);
+$DarkGrayishCyan: hsl(186, 14%, 43%);
+$GrayishCyan: hsl(184, 14%, 56%);
+$LightGrayishCyan: hsl(185, 41%, 84%);
+$VeryLightGrayishCyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-family: $font;
+  font-size: 24px;
+  background-color: $GrayishCyan;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 700;
+  flex-direction: column;
+  place-content: center;
+  color: $DarkGrayishCyan;
+}
+
+.wrapper {
+  background-color: $White;
+  border-radius: 20px;
+  padding: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  @media (min-width: 1280px) {
+    max-width: 70%;
+    margin-inline: auto;
+    display: flex;
+    column-gap: 20px;
+    height: 500px;
+
+    .top,
+    .count {
+      flex: 1;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  margin: 20px 0;
+  color: $VeryDarkCyan;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  img {
+    position: absolute;
+    padding-left: 8px;
+  }
+
+  input {
+    background-color: $VeryLightGrayishCyan;
+    // background-color: rgb(236, 236, 236);
+    width: 100%;
+    padding: 8px;
+    text-align: right;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    &:focus {
+      outline-color: $StrongCyan;
+    }
+  }
+}
+
+.tip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+
+  button,
+  input {
+    width: calc(100% / 2.1);
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    @media (min-width: 1280px) {
+      width: calc(100% / 3.5);
+    }
+  }
+
+  button {
+    background-color: $VeryDarkCyan;
+    color: $White;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+
+    &:hover {
+      background-color: $LightGrayishCyan;
+      color: $VeryDarkCyan;
+    }
+
+    &.active {
+      background-color: $LightGrayishCyan;
+      color: $VeryDarkCyan;
+    }
+
+    // &::after {
+    //   content: "%";
+    // }
+  }
+
+  input {
+    background-color: $VeryLightGrayishCyan;
+    text-align: right;
+
+    &:focus {
+      outline-color: $StrongCyan;
+    }
+  }
+}
+
+.people {
+  p {
+    display: none;
+    font-size: .7em;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+  }
+
+  &.error {
+    p {
+      display: block;
+      color: red;
+    }
+
+    input {
+      outline: 2px solid red;
+    }
+  }
+}
+
+.count {
+  background-color: $VeryDarkCyan;
+  color: $White;
+  padding: 40px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+
+  .amount,
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .result {
+      color: $StrongCyan;
+      font-size: 1.6em;
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      span {
+        font-size: 0.7em;
+      }
+    }
+
+    p {
+      color: $DarkGrayishCyan;
+    }
+  }
+
+  button {
+    display: flex;
+    background-color: $StrongCyan;
+    width: 100%;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 8px 0;
+    font-weight: 700;
+    color: $VeryDarkCyan;
+    text-transform: uppercase;
+    margin-top: 40px;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    &:disabled::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background-color: $VeryDarkCyan;
+      opacity: 0.7;
+    }
+
+    // @media (min-width: 1280px) {
+    //   position: absolute;
+    //   inset: auto 0 0 0;
+    //   width: calc(100% - 80px);
+    //   margin-bottom: 40px;
+    //   margin-inline: auto;
+    // }
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.attribution {
+  position: absolute;
+  inset: auto auto 40px auto;
+  text-align: center;
+  width: 100%;
+  color: $White;
+}

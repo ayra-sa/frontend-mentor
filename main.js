@@ -230,6 +230,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/time-tracking-dashboard-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/time-tracking-dashboard-main/index.html'
   },
+  {
+      name: "Tip calculator app challenge",
+      level: "junior",
+      image: "tip-calculator-app-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/tip-calculator-app-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/tip-calculator-app-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");

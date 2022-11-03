@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <div>
+          <p>Bill</p>
+          <div class="input">
+            <img src="images/icon-dollar.svg" alt="icon-dollar">
+            <input type="number" placeholder="0" id="bill" />
+          </div>
+        </div>
+        
+        <div>
+          <p>Select Tip %</p>
+          <div class="tip">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <input type="number" placeholder="Custom" id="custom" />
+          </div>
+        </div>
+
+        <div>
+          <p>Number of People</p>
+          <div class="input people">
+            <img src="images/icon-person.svg" alt="icon-person">
+            <input type="number" placeholder="0" id="people" />
+            <p class="error">Can't be zero</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="count">
+        <div class="amount">
+          <div class="left">
+            <b>Tip Amount</b>
+            <p> / person </p>
+          </div>
+          <b class="result" id="amount">$0.00</b>
+        </div>
+        <div class="total">
+          <div class="left">
+            <b>Total</b>
+            <p> / person </p>
+          </div>
+          <b class="result" id="total">$0.00</b>
+        </div>
+
+        <button type="reset" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ayra-sa</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
