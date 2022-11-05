@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+// VARIABLES
+
+$font: "Manrope", sans-serif;
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-family: $font;
+  font-size: 28px;
+  background-color: $DarkBlue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+
+#main {
+  background-color: $DarkGrayishBlue;
+  max-width: 90%;
+  margin-inline: auto;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  color: $LightCyan;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+  span {
+    color: $NeonGreen;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: block;
+    font-size: 0.55em;
+    letter-spacing: 0.2em;
+  }
+
+  picture img {
+    margin: 40px auto;
+  }
+
+  button {
+    background-color: $NeonGreen;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    inset: auto 45% -25px 45%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    width: calc(100% - 60%);
+    height: 45vh;
+    padding: 40px 60px;
+    
+    picture img {
+        margin-top: 80px;
+    }
+
+    button {
+      inset: auto 46% -25px 46%;
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  inset: auto auto 20px auto;
+  font-size: .65em;
+  color: white;
+}

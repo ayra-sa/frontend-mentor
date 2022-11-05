@@ -237,6 +237,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/tip-calculator-app-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/tip-calculator-app-main/index.html'
   },
+  {
+      name: "Advice generator app challenge",
+      level: "junior",
+      image: "advice-generator-app-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/advice-generator-app-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/advice-generator-app-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
