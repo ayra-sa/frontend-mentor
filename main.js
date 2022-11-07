@@ -244,6 +244,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/advice-generator-app-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/advice-generator-app-main/index.html'
   },
+  {
+      name: "Expenses chart component challenge",
+      level: "junior",
+      image: "expenses-chart-component-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/expenses-chart-component-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/expenses-chart-component-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");

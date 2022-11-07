@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+// VARIABLES
+
+$font: "DM Sans", sans-serif;
+$SoftRed: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+$DarkBrown: hsl(25, 47%, 15%);
+$MediumBrown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$VeryPaleOrange: hsl(33, 100%, 98%);
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-size: 1em;
+  font-family: $font;
+  background-color: $Cream;
+  min-height: 100vh;
+  
+  @media (min-width: 1280px) {
+      overflow-y: hidden;
+  }
+}
+
+p {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+
+  @media (min-width: 1280px) {
+    max-width: 45%;
+    // margin: 60px auto;
+  }
+}
+
+.box {
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.balance {
+  background-color: $SoftRed;
+  margin-bottom: 20px;
+  @extend .box;
+  color: $VeryPaleOrange;
+  position: relative;
+
+  &::after {
+    content: url(../images/logo.svg);
+    position: absolute;
+    inset: 30px 20px 30px auto;
+  }
+}
+
+.spending {
+  background-color: $VeryPaleOrange;
+  @extend .box;
+
+  #charts {
+    display: flex;
+    // justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 20px;
+    height: 300px;
+
+      @media (min-width: 1280px) {
+        // height: 400px;
+      }
+
+    .chart {
+      text-align: center;
+      width: calc(100% / 7);
+      margin-top: 60px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .display {
+        background-color: $SoftRed;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+
+        &.high {
+            background-color: $Cyan;
+        }
+      }
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+  }
+}
+
+
+.attribution {
+    position: absolute;
+    inset: auto auto 20px auto;
+    width: 100%;
+    text-align: center;
+}
