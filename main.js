@@ -251,6 +251,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/expenses-chart-component-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/expenses-chart-component-main/index.html'
   },
+  {
+      name: "Intro section with dropdown navigation challenge",
+      level: "junior",
+      image: "intro-section-with-dropdown-navigation-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/intro-section-with-dropdown-navigation-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/intro-section-with-dropdown-navigation-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
