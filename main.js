@@ -258,6 +258,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/intro-section-with-dropdown-navigation-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/intro-section-with-dropdown-navigation-main/index.html'
   },
+  {
+      name: "News homepage challenge",
+      level: "junior",
+      image: "news-homepage-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/news-homepage-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/news-homepage-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
