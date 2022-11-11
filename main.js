@@ -265,6 +265,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/news-homepage-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/news-homepage-main/index.html'
   },
+  {
+      name: "Notifications page challenge",
+      level: "junior",
+      image: "notifications-page-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/notifications-page-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/notifications-page-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+// VARIABLES
+
+$font: "Plus Jakarta Sans", sans-serif;
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+$White: hsl(0, 0%, 100%);
+$VeryLightGrayishBlue: hsl(210, 60%, 98%);
+$LightGrayishBlue1: hsl(211, 68%, 94%);
+$LightGrayishBlue2: hsl(205, 33%, 90%);
+$GrayishBlue: hsl(219, 14%, 63%);
+$DarkGrayishBlue: hsl(219, 12%, 42%);
+$VeryDarkBlue: hsl(224, 21%, 14%);
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-family: $font;
+  font-size: 16px;
+  background-color: $VeryLightGrayishBlue;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  //font-weight: 800;
+  color: $GrayishBlue;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+
+  &:hover {
+    color: $Blue;
+  }
+}
+
+.container {
+  max-width: 90%;
+  margin: 40px auto;
+  background-color: $White;
+  padding: 20px 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  
+  .top {
+    margin-bottom: 40px;
+    @extend .flex-center;
+    justify-content: space-between;
+
+    .notification {
+      @extend .flex-center;
+      column-gap: 5px;
+
+      span {
+        background-color: $Blue;
+        padding: 3px 10px;
+        font-weight: 700;
+        color: $White;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+    }
+  }
+
+  .notif-all {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .notif {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 10px;
+      padding: 18px;
+
+      &.unread {
+        background-color: $VeryLightGrayishBlue;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+
+        .right {
+          .info {
+            .circle {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .profile {
+        flex: 1;
+      }
+
+      .right {
+        flex: 7;
+
+        .info {
+          color: $DarkGrayishBlue;
+
+          .name {
+            font-weight: 800;
+            color: $VeryDarkBlue;
+            transition: 0.3s ease;
+            -webkit-transition: 0.3s ease;
+            -moz-transition: 0.3s ease;
+            -ms-transition: 0.3s ease;
+            -o-transition: 0.3s ease;
+
+            &:hover {
+              color: $Blue;
+            }
+          }
+
+          .post {
+            font-weight: 800;
+            transition: 0.3s ease;
+            -webkit-transition: 0.3s ease;
+            -moz-transition: 0.3s ease;
+            -ms-transition: 0.3s ease;
+            -o-transition: 0.3s ease;
+
+            &:hover {
+              color: $Blue;
+            }
+          }
+
+          .group {
+            color: $Blue;
+            font-weight: 800;
+          }
+
+          .circle {
+            margin-left: 5px;
+            width: 8px;
+            height: 8px;
+            background-color: $Red;
+            display: none;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+          }
+        }
+
+        .time {
+          color: $GrayishBlue;
+        }
+
+        .box {
+          border: 1px solid $LightGrayishBlue2;
+          color: $DarkGrayishBlue;
+          padding: 18px;
+          display: block;
+          margin-top: 20px;
+          border-radius: 6px;
+          transition: 0.3s ease;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          -ms-border-radius: 6px;
+          -o-border-radius: 6px;
+          -webkit-transition: 0.3s ease;
+          -moz-transition: 0.3s ease;
+          -ms-transition: 0.3s ease;
+          -o-transition: 0.3s ease;
+
+          &:hover {
+            background-color: $LightGrayishBlue2;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 60%;
+  }
+}
+
+.attribution {
+  display: inline-block;
+  margin: 40px 0;
+  width: 100%;
+  text-align: center;
+}
