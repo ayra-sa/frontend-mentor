@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+// VARIABLES
+
+$font: "Space Grotesk", sans-serif;
+$LinearGradient-activeInputBorder: rgb(100, 72, 254) to rgb(96, 5, 148);
+$Red-inputErrors: hsl(0, 100%, 66%);
+$White: hsl(0, 0%, 100%);
+$LightGrayishViolet: hsl(270, 3%, 87%);
+$DarkGrayishViolet: hsl(279, 6%, 55%);
+$VeryDarkViolet: hsl(278, 68%, 11%);
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-family: $font;
+  font-size: 18px;
+  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // place-content: center;
+}
+
+button {
+  background-color: $VeryDarkViolet;
+  color: $White;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .left {
+    padding: 60px 20px;
+    background: url(../images/bg-main-mobile.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    @media (min-width: 1280px) {
+      width: 30%;
+      background: url(../images/bg-main-desktop.png) center no-repeat;
+  }
+
+    .card-back {
+      background: url(../images/bg-card-back.png) center no-repeat;
+      background-size: contain;
+      height: 35vh;
+      width: 80%;
+      margin-left: auto;
+
+  @media (min-width: 1280px) {
+    width: 100%;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 75%;
+  }
+    }
+
+    .card-front {
+      background: url(../images/bg-card-front.png) center no-repeat;
+      background-size: cover;
+      height: 35vh;
+      padding: 30px;
+      inset: auto 80px auto 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      color: $White;
+      position: absolute;
+      margin-top: -22%;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+
+  @media (min-width: 1280px) {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 40px;
+        background-color: $White;
+        border-radius: 50px;
+        position: relative;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+
+        &::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          margin-top: 10px;
+          border: 2px solid $White;
+          display: block;
+          margin-left: 50px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+        }
+      }
+
+      .num {
+        font-size: 1.6em;
+      }
+
+      .name {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .right {
+    padding: 80px 20px 20px 20px;
+
+  @media (min-width: 1280px) {
+    padding: 15% 18% 15% 20%;
+    width: 70%;
+  }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      // row-gap: 10px;
+
+      label {
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        font-weight: bold;
+        margin-top: 10px;
+        display: inline-block;
+        font-size: .75em;
+      }
+
+      .input {
+        position: relative;
+
+        input {
+          outline: 1px solid $LightGrayishViolet;
+          padding: 10px;
+          border-radius: 6px;
+          width: 100%;
+          margin-top: 10px;
+          // position: relative;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          -ms-border-radius: 6px;
+          -o-border-radius: 6px;
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          &[type="number"] {
+            -moz-appearance: textfield;
+          }
+
+          &::placeholder {
+            color: $LightGrayishViolet;
+          }
+
+          &:focus {
+            outline-color: rgb(100, 72, 254);
+          }
+        }
+
+        small {
+          color: $Red-inputErrors;
+          font-size: 0.7em;
+          margin-top: 5px;
+          visibility: hidden;
+        }
+
+        .err {
+          position: absolute;
+        }
+
+        &.error {
+          input {
+            outline-color: $Red-inputErrors;
+          }
+          
+          .blank {
+            visibility: visible;
+          }
+        }
+
+        &.error-num {
+          input {
+            outline-color: $Red-inputErrors;
+          }
+          
+          .err {
+            visibility: visible;
+          }
+        }
+      }
+
+      .input-card {
+        display: flex;
+        column-gap: 20px;
+        margin-bottom: 40px;
+        align-items: flex-start;
+
+        .exp,
+        .cvc {
+          flex: 1;
+        }
+
+        .exp-input {
+          display: flex;
+          column-gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+.complete {
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  // align-items: center;
+  text-align: center;
+  padding: 50px 0;
+
+  figure {
+    display: inline-block;
+    margin: 0 auto 40px auto;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 60px;
+  }
+}

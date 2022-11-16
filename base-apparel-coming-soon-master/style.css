@@ -199,8 +199,8 @@ footer {
 @media (min-width: 1280px) {
   nav {
     position: absolute;
-    left: 10%;
-    padding: 30px 0;
+    padding: 50px 0 50px 10%;
+    background: none;
   }
 
   .container {
@@ -210,6 +210,11 @@ footer {
   .content {
     padding-left: 10%;
     text-align: left;
+    padding-top: 8%;
+  }
+
+  .image {
+    position: relative;
   }
 
   h1 {

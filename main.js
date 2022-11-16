@@ -272,6 +272,13 @@ const data = [
       repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/notifications-page-main',
       link: 'https://ayra-sa.github.io/frontend-mentor/notifications-page-main/index.html'
   },
+  {
+      name: "Interactive card details form challenge",
+      level: "junior",
+      image: "interactive-card-details-form-main/design/desktop-preview.jpg",
+      repo: 'https://github.com/ayra-sa/frontend-mentor/tree/main/interactive-card-details-form-main',
+      link: 'https://ayra-sa.github.io/frontend-mentor/interactive-card-details-form-main/index.html'
+  },
 ];
 
 let displayData = document.getElementById("data");
@@ -282,13 +289,15 @@ const listData = data.map((d, index) => {
             <figure>
                 <img src=${d.image} alt=${d.name} />
             </figure>
-            <div class="card_detail">
-                <h2>${d.name}</h2>
-                <p>${d.level}</p>
-            </div>
-            <div class="card_link">
-                <a href=${d.repo} target="_blank" class="btn_secondary">Repository</a>
-                <a href=${d.link} target="_blank" class="btn_primary">Demo</a>
+            <div class="card_bottom">
+                <div class="card_detail">
+                    <h2>${d.name}</h2>
+                    <p>${d.level}</p>
+                </div>
+                <div class="card_link">
+                    <a href=${d.repo} target="_blank" class="btn_secondary">Repository</a>
+                    <a href=${d.link} target="_blank" class="btn_primary">Demo</a>
+                </div>
             </div>
         </div>`;
 }).join('');
