@@ -8,14 +8,7 @@ for (i=0; i<handleClick.length; i++) {
 }
 
 function toggleItem () {
-    // handleClick.classList.toggle("active")
     
-    // let answer = this.nextElementSibling
-    // if (answer.style.display === "block") {
-    //     answer.style.display = "none"
-    // } else {
-    //     answer.style.display = "block"
-    // }
     const item = this.parentNode.className
     for (i = 0; i < faqBox.length; i++) {
         faqBox[i].className = 'faq_content-box close'
