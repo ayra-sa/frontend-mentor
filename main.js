@@ -293,6 +293,13 @@ const data = [
     repo: "https://github.com/ayra-sa/frontend-mentor/tree/main/bookmark-landing-page-master",
     link: "https://ayra-sa.github.io/frontend-mentor/bookmark-landing-page-master/index.html",
   },
+  {
+    name: "Easybank landing page challenge",
+    level: "intermediate",
+    image: "easybank-landing-page-master/design/desktop-preview.jpg",
+    repo: "https://github.com/ayra-sa/frontend-mentor/tree/main/easybank-landing-page-master",
+    link: "https://ayra-sa.github.io/frontend-mentor/easybank-landing-page-master/index.html",
+  },
 ];
 
 let displayData = document.getElementById("data");
