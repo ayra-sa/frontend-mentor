@@ -300,6 +300,13 @@ const data = [
     repo: "https://github.com/ayra-sa/frontend-mentor/tree/main/manage-landing-page-master",
     link: "https://ayra-sa.github.io/frontend-mentor/manage-landing-page-master/index.html",
   },
+  {
+    name: "Url shortening api challenge",
+    level: "intermediate",
+    image: "url-shortening-api-master/design/desktop-preview.jpg",
+    repo: "https://github.com/ayra-sa/frontend-mentor/tree/main/url-shortening-api-master",
+    link: "https://ayra-sa.github.io/frontend-mentor/url-shortening-api-master/index.html",
+  },
 ];
 
 let displayData = document.getElementById("data");
@@ -342,8 +349,8 @@ const filterData = (value) => {
 
   let btn = document.querySelectorAll(".btn_tag");
   btn.forEach((b) => {
-    console.log(value.toUpperCase());
-    console.log(b.innerText, b);
+    // console.log(value.toUpperCase());
+    // console.log(b.innerText, b);
     if (value.toUpperCase() == b.innerText.toUpperCase()) {
       b.classList.add("active");
     } else {
