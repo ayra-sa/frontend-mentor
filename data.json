@@ -281,9 +281,37 @@
     },
     {
         "name": "Bookmark landing page challenge",
-        "level": "Intermediate",
+        "level": "intermediate",
         "image": "bookmark-landing-page-master/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/bookmark-landing-page-master",
         "link": "https://ayra-sa.github.io/frontend-mentor/bookmark-landing-page-master/index.html"
-    }
+    },
+    {
+        "name": "Manage landing page challenge",
+        "level": "intermediate",
+        "image": "manage-landing-page-master/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/manage-landing-page-master",
+        "link": "https://ayra-sa.github.io/frontend-mentor/manage-landing-page-master/index.html"
+      },
+      {
+        "name": "Url shortening api challenge",
+        "level": "intermediate",
+        "image": "url-shortening-api-master/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/url-shortening-api-master",
+        "link": "https://ayra-sa.github.io/frontend-mentor/url-shortening-api-master/index.html"
+      },
+      {
+        "name": "Chat app css illustration challenge",
+        "level": "intermediate",
+        "image": "chat-app-css-illustration-master/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/chat-app-css-illustration-master",
+        "link": "https://ayra-sa.github.io/frontend-mentor/chat-app-css-illustration-master/index.html"
+      },
+      {
+        "name": "Static job listings challenge",
+        "level": "intermediate",
+        "image": "static-job-listings-master/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/static-job-listings-master",
+        "link": "https://ayra-sa.github.io/frontend-mentor/static-job-listings-master/index.html"
+      }
   ]

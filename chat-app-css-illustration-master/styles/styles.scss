@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+// VARIABLES
+
+$font: "Rubik", sans-serif;
+$PaleViolet-sub_heading_at_the_top_of_the_app_UI: hsl(276, 100%, 81%);
+$PaleViolet-chat_bg: hsla(276, 100%, 81%, 0.1);
+$ModerateViolet-chat_on_the_left: hsl(276, 55%, 52%);
+$DesaturatedDarkViolet-chat_on_the_right: hsl(271, 15%, 43%);
+$GrayishBlue-placeholder_text: hsl(206, 6%, 79%);
+$VeryDarkDesaturatedViolet-main_heading: hsl(271, 36%, 24%);
+$DarkGrayishViolet-paragraph: hsl(270, 7%, 64%);
+$LightMagenta: #e942ff;
+$LightViolet: #8838ff;
+$White: hsl(0, 0%, 100%);
+$LightGrayishViolet-app_background: hsl(270, 20%, 96%);
+$VeryDarkDesaturatedViolet-submit_button_background: hsl(271, 36%, 24%);
+$VeryLightMagenta-radio_button_outline: hsl(289, 100%, 72%);
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-family: $font;
+  font-size: 16px;
+  background-color: $LightGrayishViolet-app_background;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+}
+
+.decor {
+  position: absolute;
+  background: rgb(233, 66, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(233, 66, 255, 1) 0%,
+    rgba(136, 56, 255, 1) 100%
+  );
+  inset: 0 50% 20% 0;
+  border-radius: 0 0 500px 0;
+  -webkit-border-radius: 0 0 500px 0;
+  -moz-border-radius: 0 0 500px 0;
+  -ms-border-radius: 0 0 500px 0;
+  -o-border-radius: 0 0 500px 0;
+
+  @media (min-width: 1280px) {
+    inset: 0 60% 20% 0;
+    border-radius: 0 0 500px 500px;
+    -webkit-border-radius: 0 0 500px 500px;
+    -moz-border-radius: 0 0 500px 500px;
+    -ms-border-radius: 0 0 500px 500px;
+    -o-border-radius: 0 0 500px 500px;
+}
+}
+
+.wrap {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+    padding: 0 40px;
+    max-width: 75%;
+    column-gap: 100px;
+  }
+}
+
+.phone {
+  background-color: $LightGrayishViolet-app_background;
+  border: 18px solid $White;
+  max-width: 90%;
+  border-radius: 30px;
+  box-shadow: 0 2px 3px #ddd;
+  margin: 60px auto 0 auto;
+  position: relative;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+
+  @media (min-width: 1280px) {
+    width: 50%;
+    height: fit-content;
+    margin-top: unset;
+    // flex: 2;
+    max-width: unset;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 25% 97% 25%;
+    background-color: $White;
+    border-radius: 0 0 30px 30px;
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -ms-border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+  }
+
+  &-header {
+    display: flex;
+    background: rgb(233, 66, 255);
+    background: linear-gradient(
+      280deg,
+      rgba(233, 66, 255, 1) 0%,
+      rgba(136, 56, 255, 1) 100%
+    );
+    padding: 40px 20px 20px 20px;
+    border-radius: 15px 15px 10px 10px;
+    -webkit-border-radius: 15px 15px 10px 10px;
+    -moz-border-radius: 15px 15px 10px 10px;
+    -ms-border-radius: 15px 15px 10px 10px;
+    -o-border-radius: 15px 15px 10px 10px;
+    color: $White;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+    }
+
+    i {
+      cursor: pointer;
+    }
+
+    .name {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      img {
+        border: 2px solid $White;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+      }
+    }
+  }
+
+  &-chats {
+    padding: 20px;
+
+    .dogs {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 10px;
+      margin: 20px 0;
+
+      img {
+        border-radius: 20px;
+        width: calc(100% / 4);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+      }
+    }
+
+    .chat {
+      width: 60%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+
+      &.left {
+        color: $ModerateViolet-chat_on_the_left;
+        background-color: $PaleViolet-chat_bg;
+      }
+
+      &.right {
+        margin-left: auto;
+        color: $DesaturatedDarkViolet-chat_on_the_right;
+        background-color: $White;
+      }
+    }
+  }
+
+  &-price {
+    .price {
+      background: rgb(233, 66, 255);
+      background: linear-gradient(
+        280deg,
+        rgba(233, 66, 255, 1) 0%,
+        rgba(136, 56, 255, 1) 100%
+      );
+      width: 80%;
+      border-radius: 20px 20px 20px 10px;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      color: $White;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      -webkit-border-radius: 20px 20px 20px 10px;
+      -moz-border-radius: 20px 20px 20px 10px;
+      -ms-border-radius: 20px 20px 20px 10px;
+      -o-border-radius: 20px 20px 20px 10px;
+    }
+  }
+
+  form {
+    margin: 0 20px 20px 20px;
+    background-color: $White;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    input {
+      flex: 1;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: $VeryDarkDesaturatedViolet-submit_button_background;
+      color: $White;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+}
+
+.content {
+  text-align: center;
+  margin-top: 60px;
+  padding: 0 20px;
+
+  @media (min-width: 1280px) {
+    // width: 50%;
+    flex: 1;
+    text-align: left;
+  }
+
+  h1 {
+    color: $VeryDarkDesaturatedViolet-main_heading;
+  }
+
+  p {
+    color: $DarkGrayishViolet-paragraph;
+    margin-top: 20px;
+  }
+}
+
+.attribution {
+  text-align: center;
+  margin: 20px auto;
+  display: inline-block;
+  width: 100%;
+  // position: absolute;
+  inset: auto 0 0 0;
+
+  a {
+    font-weight: 600;
+  }
+
+  @media (min-width: 1280px) {
+    position: absolute;
+  }
+}
