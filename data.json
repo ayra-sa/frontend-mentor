@@ -313,5 +313,12 @@
         "image": "static-job-listings-master/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/static-job-listings-master",
         "link": "https://ayra-sa.github.io/frontend-mentor/static-job-listings-master/index.html"
+      },
+      {
+        "name": "Room homepage challenge",
+        "level": "intermediate",
+        "image": "room-homepage-master/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/room-homepage-master",
+        "link": "https://ayra-sa.github.io/frontend-mentor/room-homepage-master/index.html"
       }
   ]
