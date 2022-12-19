@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  /* Remove default margin on everything */
+  margin: 0;
+  /* Remove default padding on everything */
+  padding: 0;
+  /* Calc `em` based line height, bigger line height for smaller font size and smaller line height for bigger font size: https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/ */
+  line-height: calc(0.25rem + 1em + 0.25rem);
+}
+
+/* Use a more-intuitive box-sizing model on everything */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove border and set sensible defaults for backgrounds, on all elements except fieldset progress and meter */
+*:where(:not(fieldset, progress, meter)) {
+  border-width: 0;
+  border-style: solid;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+html {
+  /* Allow percentage-based heights in the application */
+  block-size: 100%;
+  /* Making sure text size is only controlled by font-size */
+  -webkit-text-size-adjust: none;
+}
+
+/* Smooth scrolling for users that don't prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  /* https://marco.org/2012/11/15/text-rendering-optimize-legibility */
+  text-rendering: optimizeSpeed;
+  /* Allow percentage-based heights in the application */
+  min-block-size: 100%;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter#example_2 */
+  /* scrollbar-gutter: stable both-edges; Removed until this bug is fixed: https://bugs.chromium.org/p/chromium/issues/detail?id=1318404#c2 */
+}
+
+/* Improve media defaults */
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, svg, video) {
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+/* Remove stroke and set fill colour to the inherited font colour */
+:where(svg) {
+  stroke: none;
+  fill: currentColor;
+}
+
+/* SVG's without a fill attribute */
+:where(svg):where(:not([fill])) {
+  /* Remove fill and set stroke colour to the inherited font colour */
+  stroke: currentColor;
+  fill: none;
+  /* Rounded stroke */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Set a size for SVG's without a width attribute */
+:where(svg):where(:not([width])) {
+  inline-size: 5rem;
+}
+
+/* Remove built-in form typography styles */
+:where(input, button, textarea, select),
+:where(input[type="file"])::-webkit-file-upload-button {
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+/* Change textarea resize to vertical only and block only if the browser supports that */
+:where(textarea) {
+  resize: vertical;
+}
+
+@supports (resize: block) {
+  :where(textarea) {
+    resize: block;
+  }
+}
+
+/* Avoid text overflows */
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/* Fix h1 font size inside article, aside, nav, and section */
+h1 {
+  font-size: 2em;
+}
+
+/* Position list marker inside */
+:where(ul, ol) {
+  list-style-position: inside;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+:where(ul, ol)[role="list"] {
+  list-style: none;
+}
+
+/* More readable underline style for anchor tags without a class. This could be set on anchor tags globally, but it can cause conflicts. */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make it clear that interactive elements are interactive */
+:where(
+a[href],
+area,
+button,
+input,
+label[for],
+select,
+summary,
+textarea,
+[tabindex]:not([tabindex*="-"])
+) {
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+:where(input[type="file"]) {
+  cursor: auto;
+}
+
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  cursor: pointer;
+}
+
+/* Animate focus outline */
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    -webkit-transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+  }
+  :where(:not(:active)):focus-visible {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+}
+
+:where(:not(:active)):focus-visible {
+  outline-offset: 5px;
+}
+
+/* Make sure users can't select button text */
+:where(
+button,
+button[type],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]
+),
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+/* Disabled cursor for disabled buttons */
+:where(
+button,
+button[type],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]
+)[disabled] {
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+p {
+  font-size: 0.8em;
+}
+
+.top {
+  background: url(../images/pattern-bg.png) center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 45vh;
+  padding-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .top {
+    height: 25vh;
+    padding-top: 60px;
+  }
+}
+
+.top h1 {
+  margin-bottom: 20px;
+}
+
+.top form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .top form {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px auto 0 auto;
+  }
+}
+
+.top form input {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  color: #2b2b2b;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+
+.top form input::-webkit-input-placeholder {
+  font-size: 0.8em;
+}
+
+.top form input:-ms-input-placeholder {
+  font-size: 0.8em;
+}
+
+.top form input::-ms-input-placeholder {
+  font-size: 0.8em;
+}
+
+.top form input::placeholder {
+  font-size: 0.8em;
+}
+
+@media (min-width: 1200px) {
+  .top form input::-webkit-input-placeholder {
+    font-size: inherit;
+  }
+  .top form input:-ms-input-placeholder {
+    font-size: inherit;
+  }
+  .top form input::-ms-input-placeholder {
+    font-size: inherit;
+  }
+  .top form input::placeholder {
+    font-size: inherit;
+  }
+}
+
+.top form input:focus {
+  outline: none;
+  border: none;
+}
+
+.top form button {
+  border-radius: 0 10px 10px 0;
+  padding: 10px 20px;
+  background-color: #2b2b2b;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+
+.top .box {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #2b2b2b;
+  position: absolute;
+  inset: auto auto -58% auto;
+  z-index: 33;
+  width: 90%;
+  -webkit-box-shadow: 0 2px 5px #969696;
+          box-shadow: 0 2px 5px #969696;
+  border-radius: 10px;
+  padding: 20px 0;
+  row-gap: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.top .box div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.top .box div p {
+  text-transform: uppercase;
+}
+
+.top .box div h2 {
+  font-size: 1.2em;
+}
+
+@media (min-width: 1200px) {
+  .top .box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    inset: auto auto -20% auto;
+    width: 80%;
+  }
+  .top .box div {
+    text-align: left;
+    padding: 10px 20px;
+  }
+  .top .box div:not(:nth-last-child(1)) {
+    border-right: 1px solid #969696;
+  }
+}
+
+#map {
+  height: 55vh;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: 1200px) {
+  #map {
+    height: 75vh;
+  }
+}
+
+.attribution {
+  position: absolute;
+  inset: auto 40% 0 0;
+  font-size: 0.5em;
+  background-color: white;
+  padding: 2px 5px;
+}
+
+.attribution a {
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .attribution {
+    inset: auto 13% 0 0;
+    font-size: inherit;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

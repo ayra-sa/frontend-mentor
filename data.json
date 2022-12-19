@@ -320,5 +320,12 @@
         "image": "room-homepage-master/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/room-homepage-master",
         "link": "https://ayra-sa.github.io/frontend-mentor/room-homepage-master/index.html"
+      },
+      {
+        "name": "IP address tracker challenge",
+        "level": "intermediate",
+        "image": "ip-address-tracker-master/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/ip-address-tracker-master",
+        "link": "https://ayra-sa.github.io/frontend-mentor/ip-address-tracker-master/index.html"
       }
   ]
