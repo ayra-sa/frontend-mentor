@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/interactive-card-details-form-main)
-- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/interactive-card-details-form-main/index.html)
+- Solution URL: [Github](https://github.com/ayra-sa/frontend-mentor/tree/main/interactive-card-details-form-main)
+- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/interactive-card-details-form-main/index.html)
 
 ## My process
 

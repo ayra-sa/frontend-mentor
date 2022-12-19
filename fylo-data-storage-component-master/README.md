@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-data-storage-component-master)
-- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/fylo-data-storage-component-master/index.html)
+- Solution URL: [Solution](https://github.com/ayra-sa/frontend-mentor/tree/main/fylo-data-storage-component-master)
+- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/fylo-data-storage-component-master/index.html)
 
 ## My process
 

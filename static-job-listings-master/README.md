@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/static-job-listings-master)
-- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/static-job-listings-master/index.html)
+- Solution URL: [Github](https://github.com/ayra-sa/frontend-mentor/tree/main/static-job-listings-master)
+- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/static-job-listings-master/index.html)
 
 ## My process
 

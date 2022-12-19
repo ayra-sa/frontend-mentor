@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayra-sa/frontend-mentor/tree/main/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://ayra-sa.github.io/frontend-mentor/order-summary-component-main/index.html)
+- Solution URL: [Github](https://github.com/ayra-sa/frontend-mentor/tree/main/order-summary-component-main)
+- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/order-summary-component-main/index.html)
 
 ## My process
 
