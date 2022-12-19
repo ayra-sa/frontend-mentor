@@ -216,7 +216,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }
@@ -236,7 +236,14 @@ p {
   padding-top: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+  .top {
+    padding-top: 60px;
+    height: 35vh;
+  }
+}
+
+@media (min-width: 1400px) {
   .top {
     height: 25vh;
     padding-top: 60px;
@@ -253,13 +260,19 @@ p {
   display: flex;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .top form {
-    width: 50%;
+    width: 60%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 20px auto 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top form {
+    width: 50%;
   }
 }
 
@@ -292,7 +305,7 @@ p {
   font-size: 0.8em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .top form input::-webkit-input-placeholder {
     font-size: inherit;
   }
@@ -363,7 +376,7 @@ p {
   font-size: 1.2em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .top .box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -387,7 +400,13 @@ p {
   z-index: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+  #map {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 1400px) {
   #map {
     height: 75vh;
   }
@@ -405,7 +424,7 @@ p {
   font-weight: 700;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .attribution {
     inset: auto 13% 0 0;
     font-size: inherit;
