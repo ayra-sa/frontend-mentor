@@ -24,15 +24,18 @@
 /* VARIABLE */
 
 body {
+  font-family: var(--fontMain);
+  font-size: var(--fontSize);
+  line-height: 26px;
+  position: relative;
+}
+
+.body {
   min-height: 100vh;
   display: flex;
   place-content: center;
-  font-family: var(--fontMain);
-  font-size: var(--fontSize);
-  flex-direction: column;
-  line-height: 26px;
   text-align: center;
-  position: relative;
+  flex-direction: column;
 }
 
 a {

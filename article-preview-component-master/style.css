@@ -18,11 +18,14 @@ body {
   background-color: var(--grayishBlue);
   color: var(--veryDarkGrayishBlue);
   line-height: 24px;
+  text-align: center;
+}
+
+.body {
   display: flex;
   flex-direction: column;
   place-content: center;
   min-height: 100vh;
-  text-align: center;
 }
 
 a {
