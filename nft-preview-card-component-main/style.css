@@ -187,6 +187,7 @@ body {
 }
 
 .container {
+  margin-top: 60px;
     background-color: var(--cardBG);
     padding: 20px;
     border-radius: 18px;
@@ -313,6 +314,7 @@ a {
     text-align: center;
     margin: 20px 0;
     color: var(--softBlue);
+    font-size: .8em;
 }
 
 .attribution a {
@@ -334,6 +336,10 @@ a {
         max-width: 40%;
         margin-top: 3%;
         /* height: 90vh; */
+    }
+
+    .attribution {
+      font-size: inherit;
     }
 
 }

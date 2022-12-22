@@ -15,218 +15,224 @@
 
 /* VARIABLE */
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-    font-family: inherit;
-    font-size: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 body {
-    font-family: var(--font);
-    font-size: 1em;
-    background-color: var(--veryDarkBlue);
-    min-height: 100vh;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    place-content: center;
-    line-height: 23px;
+  font-family: var(--font);
+  font-size: 1em;
+  background-color: var(--veryDarkBlue);
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  place-content: center;
+  line-height: 23px;
 }
 
-.card, .thanks {
-    color: var(--white);
-    background-color: var(--darkBlue);
-    max-width: 80%;
-    margin-inline: auto;
-    padding: 30px;
-    border-radius: 18px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
+.card,
+.thanks {
+  color: var(--white);
+  background-color: var(--darkBlue);
+  max-width: 90%;
+  margin-inline: auto;
+  padding: 30px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 
 .card_star {
-    background-color: var(--darkBlueStar);
-    border: var(--darkBlue) 1px solid;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    place-content: center;
-    margin-bottom: 20px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+  background-color: var(--darkBlueStar);
+  border: var(--darkBlue) 1px solid;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  place-content: center;
+  margin-bottom: 20px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
-.card h1, .thanks h1 {
-    font-size: 1.65em;
-    font-weight: 700;
-    margin-bottom: 10px;
+.card h1,
+.thanks h1 {
+  font-size: 1.65em;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.card p, .thanks p {
-    opacity: .8;
+.card p,
+.thanks p {
+  opacity: 0.8;
 }
 
 .card_number {
-    display: flex;
-    margin: 20px 0 40px 0;
-    gap: 20px;
+  display: flex;
+  margin: 20px 0 40px 0;
+  gap: 10px;
 }
 
 .card_number input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    width: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
 }
 
 .card_number label {
-    background-color: var(--darkBlueStar);
-    flex: 1;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: .3s ease;
-    font-weight: 700;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
+  background-color: var(--darkBlueStar);
+  flex: 1;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  font-weight: 700;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .card_number label:hover {
-    background-color: var(--orange);
-    color: var(--white);
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .card_number input[type="radio"]:focus + label {
-    background-color: var(--mediumGrey);
+  background-color: var(--mediumGrey);
 }
 
 .card_number button {
-    background-color: var(--darkBlueStar);
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    transition: .3s ease;
-    display: flex;
-    color: var(--mediumGrey);
-    flex: 1;
-    place-content: center;
-    font-weight: 700;
-    align-items: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
+  background-color: var(--darkBlueStar);
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  color: var(--mediumGrey);
+  flex: 1;
+  place-content: center;
+  font-weight: 700;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .card_number button:hover {
-    background-color: var(--orange);
-    color: var(--white);
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .card_number button:focus {
-    background-color: var(--mediumGrey);
-    color: var(--white);
+  background-color: var(--mediumGrey);
+  color: var(--white);
 }
 
 .btn {
-    background-color: var(--orange);
-    border: none;
-    color: var(--white);
-    font-weight: 700;
-    width: 100%;
-    padding: 18px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    cursor: pointer;
-    letter-spacing: .05em;
-    transition: .3s ease;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  width: 100%;
+  padding: 18px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: 0.3s ease;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .btn:hover {
-    background-color: var(--white);
-    color: var(--orange);
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 .thanks {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
 }
 
 .thanks_submit {
-    margin: 20px 0 40px 0;
-    background-color: var(--darkBlueStar);
-    padding: 5px 10px;
-    border-radius: 50px;
-    color: var(--orange);
-    display: block;
-    width: fit-content;
-    margin-inline: auto;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+  margin: 20px 0 40px 0;
+  background-color: var(--darkBlueStar);
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: var(--orange);
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .attribution {
-    color: var(--white);
-    margin-top: 60px;
-    opacity: .8;
+  color: var(--white);
+  margin-top: 60px;
+  opacity: 0.8;
 }
 
 .attribution a {
-    transition: .3s ease;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .attribution a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
 
+@media (min-width: 1000px) {
+  .card,
+  .thanks {
+    max-width: 40%;
+  }
 
-@media (min-width: 1280px) {
-    .card, .thanks {
-        max-width: 30%;
-    }
+  .card_number {
+    column-gap: 20px;
+  }
 }

@@ -20,24 +20,23 @@
 
 /* VARIABLE */
 
-
 body {
-    font-family: var(--font);
-    font-size: 1em;
-    background: url(images/pattern-background-mobile.svg) no-repeat top;
-    background-size: contain;
-    background-color: var(--paleBlue);
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    text-align: center;
-    min-height: 100vh;
-    line-height: 27px;
+  font-family: var(--font);
+  font-size: 1em;
+  background: url(images/pattern-background-mobile.svg) no-repeat top;
+  background-size: contain;
+  background-color: var(--paleBlue);
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  line-height: 27px;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -46,23 +45,23 @@ img {
 }
 
 button {
-    font-family: inherit;
-    font-size: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .card {
-    max-width: 90%;
-    margin-inline: auto;
-    text-align: center;
-    margin-top: 60px;
-    background-color: #fff;
-    box-shadow: -1px 9px 36px -4px #0000004f;
-    border-radius: 20px;
-    color: var(--desaturatedBlue);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+  max-width: 90%;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #fff;
+  box-shadow: -1px 9px 36px -4px #0000004f;
+  border-radius: 20px;
+  color: var(--desaturatedBlue);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .card figure img {
@@ -122,11 +121,11 @@ button {
   text-decoration: underline;
   color: var(--brightBlue);
   font-weight: 900;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .card_plan a:hover {
@@ -148,18 +147,19 @@ button {
   width: 100%;
   border-radius: 14px;
   padding: 16px;
-  transition: .3s ease;
+  transition: 0.3s ease;
   box-shadow: -1px 9px 36px -4px #0000004f;
   /*font-weight: 700;
-  *//*font-size: 1.2em;
-  */-webkit-border-radius: 14px;
+  */ /*font-size: 1.2em;
+  */
+  -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
   -o-border-radius: 14px;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .btn_primary:hover {
@@ -172,11 +172,11 @@ button {
   padding: 20px;
   width: 100%;
   color: var(--desaturatedBlue);
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .btn_transparent:hover {
@@ -185,14 +185,24 @@ button {
 
 .attribution {
   margin-top: 40px;
+  font-size: 0.75em;
 }
 
-
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   body {
     background-image: url(images/pattern-background-desktop.svg);
   }
 
+  .card {
+    max-width: 40%;
+  }
+
+  .attribution {
+    font-size: inherit;
+  }
+}
+
+@media (min-width: 1400px) {
   .card {
     max-width: 30%;
   }

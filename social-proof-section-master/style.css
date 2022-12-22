@@ -112,31 +112,29 @@ body {
 }
 
 .card_author p {
-    color: var(--softPink);
-    margin-top: 5px;
-    opacity: .9;
+  color: var(--softPink);
+  margin-top: 5px;
+  opacity: 0.9;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .attribution {
-    margin-top: 60px;
-    text-align: center;
+  margin-top: 60px;
+  text-align: center;
 }
 
-
-
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }
 
   .content_top {
     flex-direction: row;
-    column-gap: 100px;
+    column-gap: 0;
   }
 
   .content_top-box {
@@ -155,7 +153,6 @@ a {
   .content_rating {
     display: inline-flex;
     width: auto;
-    width: 80%;
     text-align: center;
     padding-inline: 20px;
     column-gap: 20px;
@@ -174,23 +171,36 @@ a {
     margin-right: 40px;
   }
 
-.content_card {
+  .content_card {
     flex-direction: row;
     column-gap: 20px;
-}
+  }
 
-.card {
+  .card {
     height: 100%;
-}
+  }
 
-.card:nth-child(2) {
+  .card:nth-child(2) {
     position: relative;
     margin-top: 20px;
-}
+  }
 
-.card:nth-child(3) {
+  .card:nth-child(3) {
     position: relative;
     margin-top: 40px;
+  }
 }
 
+@media (min-width: 1400px) {
+  .content_top {
+    column-gap: 100px;
+  }
+
+  .content_rating {
+    width: 80%;
+  }
+
+  .card:nth-child(3) {
+    margin-top: 60px;
+  }
 }

@@ -25,7 +25,6 @@ body {
   flex-direction: column;
   place-content: center;
   text-align: center;
-  overflow: hidden;
 }
 
 a {
@@ -33,16 +32,16 @@ a {
   color: inherit;
 }
 
-img { 
-    max-width: 100%;
-    object-fit: cover;
+img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .container {
   background-color: white;
-  margin-inline: auto;
-  max-width: 85%;
-  width: 85%;
+  margin: 60px auto 0 auto;
+  max-width: 90%;
+  /* width: 85%; */
   border-radius: 20px;
   /* padding: 20px; */
   -webkit-border-radius: 20px;
@@ -112,17 +111,18 @@ img {
 }
 
 .attribution {
-    color: #fff;
-    font-size: 1.2em;
-    margin-top: 60px;
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 60px;
 }
 
-
-
-
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
   .container {
     max-width: 60%;
+    margin: 0 auto;
     /* width: 50%; */
     /* padding: 40px; */
   }

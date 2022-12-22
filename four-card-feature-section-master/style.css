@@ -112,6 +112,10 @@ h2 {
   text-align: right;
 }
 
+footer {
+  text-align: center;
+}
+
 @media (min-width: 1280px) {
   .card_container {
     flex-wrap: wrap;

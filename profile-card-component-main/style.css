@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   text-align: center;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body::before {
@@ -155,6 +155,7 @@ body::after {
   position: absolute;
   bottom: 20px;
   width: 100%;
+  font-size: .75em;
 }
 
 @media (min-width: 1280px) {
@@ -173,5 +174,9 @@ body::after {
 
   .card_content-profile img {
     margin-top: -10%;
+  }
+
+  .attribution {
+    font-size: inherit;
   }
 }

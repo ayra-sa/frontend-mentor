@@ -47,6 +47,7 @@ button {
 /* CARD */
 
 .card {
+    margin-top: 60px;
     max-width: 90%;
     margin-inline: auto;
     background-color: #fff;
@@ -138,9 +139,10 @@ button {
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
     .card {
         max-width: 60%;
+        margin-top: unset;
     }
 
     .card_bottom {
@@ -155,6 +157,5 @@ button {
 /* CARD */
 
 footer {
-    position: absolute;
-    bottom: 40px;
+    margin: 40px 0;
 }

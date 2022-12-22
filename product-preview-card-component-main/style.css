@@ -147,11 +147,12 @@ h1 {
 
 .attribution {
   margin-top: 80px;
+  text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .card {
-    width: 50%;
+    width: 70%;
     flex-direction: row;
     height: 500px;
     margin-top: unset;
@@ -171,5 +172,11 @@ h1 {
     -moz-border-radius: 12px 0 0 12px;
     -ms-border-radius: 12px 0 0 12px;
     -o-border-radius: 12px 0 0 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card {
+    width: 50%;
   }
 }

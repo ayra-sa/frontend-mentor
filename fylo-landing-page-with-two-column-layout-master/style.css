@@ -176,7 +176,11 @@ nav {
 
 .nav-menu {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+}
+
+.nav .brand {
+  width: 80px;
 }
 
 /* NAV END */
@@ -361,6 +365,10 @@ footer .brand {
 
   .nav-menu {
     gap: 30px;
+  }
+
+  nav .brand {
+    width: unset;
   }
 
   #early {

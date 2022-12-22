@@ -156,6 +156,10 @@ img {
   padding: 40px 0;
 }
 
+.navbar .logo {
+  width: 100px;
+}
+
 /* HEADER END */
 
 /* HERO */
@@ -201,6 +205,7 @@ img {
 
 #grow {
   position: relative;
+  overflow-x: hidden;
 }
 
 #grow::before {
@@ -219,6 +224,7 @@ img {
 
 #users {
   position: relative;
+  overflow-x: hidden;
 }
 
 #users::before {
@@ -248,6 +254,7 @@ img {
 
 footer {
   position: relative;
+  overflow-x: hidden;
 }
 
 footer::before {
@@ -338,7 +345,7 @@ footer::before {
 
 /* RESPONSIVE */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .container {
     width: calc(100% - 20%);
   }
@@ -350,6 +357,10 @@ footer::before {
   .flex {
     flex-direction: row;
     align-items: center;
+  }
+
+  .navbar .logo {
+    width: unset;
   }
 
   .hero_wrapper p {

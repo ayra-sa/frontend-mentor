@@ -78,9 +78,9 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
-    max-width: 30%;
+    max-width: 40%;
     /* height: 700px; */
   }
 
@@ -89,9 +89,14 @@ p {
   }
 }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 30%;
+  }
+}
+
 /* CONTAINER END */
 
 .attribution {
-    position: absolute;
-    bottom: 10px;
+  margin-top: 5%;
 }

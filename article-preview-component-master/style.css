@@ -155,7 +155,7 @@ h1 {
   margin: 40px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   body {
     overflow: hidden;
   }

@@ -48,7 +48,7 @@ button {
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
-  
+
   &-primary {
     background-color: $yellow;
     padding: 15px 30px;
@@ -58,7 +58,7 @@ button {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       background-color: $white;
 
       &:hover {
@@ -109,7 +109,7 @@ button {
     flex-direction: column-reverse;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     flex-direction: row;
     align-items: center;
 
@@ -120,12 +120,12 @@ button {
 }
 
 .content {
-  width: calc(100% / 2);
   // flex: 1;
   text-align: center;
   position: relative;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
+    width: calc(100% / 2);
     text-align: left;
   }
 
@@ -142,6 +142,7 @@ nav {
   position: absolute;
   padding: 20px 0;
   inset: 0 0 auto 0;
+  z-index: 44;
 
   .nav {
     &-wrap {
@@ -178,7 +179,7 @@ nav {
         border-right: 20px solid $white;
         border-bottom: 20px solid transparent;
 
-        @media (min-width: 1280px) {
+        @media (min-width: 1000px) {
           display: none;
         }
       }
@@ -191,7 +192,7 @@ nav {
         -o-transform: translateY(0);
       }
 
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         position: static;
         flex-direction: row;
         background-color: transparent;
@@ -211,7 +212,7 @@ nav {
       row-gap: 15px;
       color: $darkGrayishBlue;
 
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         color: $white;
         flex-direction: row;
         column-gap: 50px;
@@ -221,7 +222,7 @@ nav {
     &-mobile {
       cursor: pointer;
 
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         display: none;
       }
     }
@@ -234,18 +235,39 @@ nav {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  place-content: center;
+  // place-content: center;
   color: $white;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   text-align: center;
+  position: relative;
 
-  @media (min-width: 1280px) {
+  h1 {
+    margin-top: 70%;
+  }
+
+  img {
+    position: absolute;
+    inset: auto 45% 20% 45%;
+
+    @media (min-width: 1000px) {
+      inset: auto 48% 40% 48%;
+    }
+  }
+
+  @media (min-width: 1000px) {
     background: url(../images/desktop/image-header.jpg) no-repeat center;
 
     h1 {
-      margin-bottom: 30vh;
+      // margin-bottom: 30vh;
       font-size: 3em;
+      margin-top: 40%;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    h1 {
+      margin-top: 60%;
     }
   }
 }
@@ -268,7 +290,7 @@ nav {
     inset: auto 20px 40px 20px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .content {
       text-align: center;
     }
@@ -322,13 +344,13 @@ nav {
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     padding: 150px 0;
-    
+
     &-wrap {
       flex-direction: row;
       align-items: flex-start;
-  
+
       .testi {
         padding-inline: 40px;
       }
@@ -343,7 +365,7 @@ nav {
   picture {
     width: calc(100% / 2);
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       width: calc(100% / 4);
     }
   }
@@ -408,7 +430,7 @@ footer {
       }
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       max-width: 70%;
       margin-inline: auto;
     }
