@@ -478,7 +478,7 @@ input[type="radio"]:checked ~ .option-content {
   border-color: $moderateCyan;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav {
     .nav {
       &-menu {
@@ -504,7 +504,7 @@ input[type="radio"]:checked ~ .option-content {
   }
 
   section {
-    max-width: 60%;
+    max-width: 70%;
     margin-inline: auto;
 
     .top {
@@ -615,5 +615,11 @@ input[type="radio"]:checked ~ .option-content {
 
   input[type="radio"]:checked ~ .option-content > .option-btm {
     display: flex;
+  }
+}
+
+@media (min-width: 1400px) {
+  section {
+    max-width: 60%;
   }
 }

@@ -41,6 +41,10 @@ img {
     padding: 50px 0;
 }
 
+.card-wrap {
+    position: relative;
+}
+
 .card {
     display: none;
     flex-direction: column-reverse;
@@ -94,10 +98,10 @@ img {
     background-color: white;
     box-shadow: 0 0 8px #ddd;
     position: absolute;
-    inset: 60% 25% auto 25%;
-    width: 20%;
+    inset: 33% 25% auto 25%;
+    width: 25%;
     display: flex;
-    padding: 10px 0;
+    padding: 15px 5px;
     border-radius: 50px;
     margin-inline: auto;
     -webkit-border-radius: 50px;
@@ -120,7 +124,7 @@ img {
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
     .container {
         max-width: 80%;
     }
@@ -154,6 +158,13 @@ img {
         }
     }
 
+    .slider {
+        width: 12%;
+        inset: 80% 20% auto 45%;
+    }
+}
+
+@media (min-width: 1400px) {
     .slider {
         width: 8%;
         inset: 80% 20% auto 40%;

@@ -190,7 +190,7 @@ body {
   min-height: 100vh;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   body {
     overflow-y: hidden;
   }
@@ -205,9 +205,26 @@ p {
   margin: 20px auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 45%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -296,9 +313,21 @@ p {
 }
 
 .attribution {
-  position: absolute;
-  inset: auto auto 20px auto;
   width: 100%;
   text-align: center;
+  margin: 40px 0;
+  display: inline-block;
+}
+
+.attribution a {
+  font-weight: 700;
+}
+
+@media (min-width: 1000px) {
+  .attribution {
+    margin: unset;
+    position: absolute;
+    inset: auto auto 20px auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

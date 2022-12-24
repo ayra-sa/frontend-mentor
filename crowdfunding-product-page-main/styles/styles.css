@@ -677,7 +677,7 @@ input[type="radio"]:checked ~ .option-content {
   border-color: #3cb4ac;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-menu {
     position: static;
     background-color: transparent;
@@ -702,7 +702,7 @@ input[type="radio"]:checked ~ .option-content {
     display: none;
   }
   section {
-    max-width: 60%;
+    max-width: 70%;
     margin-inline: auto;
   }
   section .top-btn {
@@ -804,6 +804,12 @@ input[type="radio"]:checked ~ .option-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 1400px) {
+  section {
+    max-width: 60%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

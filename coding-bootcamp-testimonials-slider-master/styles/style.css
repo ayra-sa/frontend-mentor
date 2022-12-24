@@ -30,6 +30,10 @@ img {
   padding: 50px 0;
 }
 
+.card-wrap {
+  position: relative;
+}
+
 .card {
   display: none;
   -webkit-box-orient: vertical;
@@ -97,12 +101,12 @@ img {
   -webkit-box-shadow: 0 0 8px #ddd;
           box-shadow: 0 0 8px #ddd;
   position: absolute;
-  inset: 60% 25% auto 25%;
-  width: 20%;
+  inset: 33% 25% auto 25%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 15px 5px;
   border-radius: 50px;
   margin-inline: auto;
   -webkit-border-radius: 50px;
@@ -126,7 +130,7 @@ img {
   margin: 20px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }
@@ -158,6 +162,13 @@ img {
     padding: 100px 0;
     height: unset;
   }
+  .slider {
+    width: 12%;
+    inset: 80% 20% auto 45%;
+  }
+}
+
+@media (min-width: 1400px) {
   .slider {
     width: 8%;
     inset: 80% 20% auto 40%;

@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* VARIABLE */
 
@@ -15,183 +14,199 @@
   --blue: hsl(248, 32%, 49%);
   --darkBlue: hsl(249, 10%, 26%);
   --grayishBlue: hsl(246, 25%, 77%);
-  --font: 'Poppins', sans-serif;
+  --font: "Poppins", sans-serif;
 }
 
 /* VARIABLE */
 
-
 body {
-    background-color: var(--red);
-    background-image: url(images/bg-intro-mobile.png);
-    background-size: contain;
-    color: #fff;
-    min-height: 100vh;
-    font-family: var(--font);
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    line-height: 24px;
-    font-size: 1em;
-    text-align: center;
+  background-color: var(--red);
+  background-image: url(images/bg-intro-mobile.png);
+  background-size: contain;
+  color: #fff;
+  min-height: 100vh;
+  font-family: var(--font);
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  line-height: 24px;
+  font-size: 1em;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    max-width: 90%;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
+  max-width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .content {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
-h1, h2 {
-    font-weight: 700;
+h1,
+h2 {
+  font-weight: 700;
 }
 
 h1 {
-    line-height: 33px;
+  line-height: 33px;
 }
 
 .try {
-    background-color: var(--blue);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 6px 0px 0px hsl(249deg 10% 26% / 20%);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+  background-color: var(--blue);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 0px 0px hsl(249deg 10% 26% / 20%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .try h2 {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 0px 0px hsl(249deg 10% 26% / 20%);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px 0px hsl(249deg 10% 26% / 20%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 input {
-    width: 100%;
-    border: 1px solid var(--grayishBlue);
-    padding: 20px;
-    font-family: inherit;
-    font-size: inherit;
-    /* margin-bottom: 20px; */
-    border-radius: 4px;
-    font-weight: 600;
-    color: var(--darkBlue);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--grayishBlue);
+  padding: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  /* margin-bottom: 20px; */
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--darkBlue);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .btn {
-    border: none;
-    background-color: var(--green);
-    font-weight: 700;
-    color: #fff;
-    width: 100%;
-    padding: 20px;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+  border: none;
+  background-color: var(--green);
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .form_control.error input {
-    border-color: var(--red);
+  border-color: var(--red);
 }
 
 .form_control.success input {
-    border-color: var(--green);
+  border-color: var(--green);
 }
 
 .form_control small {
-    visibility: hidden;
-    color: var(--red);
-    margin-bottom: 20px;
+  visibility: hidden;
+  color: var(--red);
+  margin-bottom: 20px;
 }
 
 .form_control.error small {
-    visibility: visible;
+  visibility: visible;
 }
 
 .form_control.success small {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 form p {
-    color: var(--grayishBlue);
-    text-align: center;
+  color: var(--grayishBlue);
+  text-align: center;
 }
 
 form a {
-    color: var(--red);
-    font-weight: 600;
+  color: var(--red);
+  font-weight: 600;
 }
 
 .terms {
-    font-size: .7em;
-    font-weight: 600;
+  font-size: 0.7em;
+  font-weight: 600;
 }
 
+footer {
+  font-size: 0.75em;
+}
 
+footer a {
+  font-weight: 700;
+}
 
-@media (min-width: 1280px) {
-    body {
-        overflow: hidden;
-    }
+@media (min-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
 
-    .container {
-        max-width: 70%;
-        flex-direction: row;
-        align-items: center;
-    }
+  .container {
+    max-width: 90%;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .content {
-        text-align: left;
-    }
+  .content {
+    text-align: left;
+  }
 
-    h1 {
-        font-size: 3em;
-        line-height: 44px;
-    }
-    
-    .try span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }
-    
-    .try span h2 {
-        margin: 0;
-        font-size: 1em;
-        font-weight: 700;
-    }
+  h1 {
+    font-size: 3em;
+    line-height: 44px;
+  }
+
+  .try span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .try span h2 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  footer {
+    font-size: inherit;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 70%;
+  }
 }
