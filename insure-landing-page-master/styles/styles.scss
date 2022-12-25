@@ -91,10 +91,9 @@ nav {
       left: -100%;
       width: 100%;
       // left: 0;
-      z-index: 2;
+      z-index: 4;
       top: 75px;
       background-color: $veryDarkViolet;
-      //display: none;
       color: $veryLightGray;
       text-transform: uppercase;
       height: 100%;
@@ -319,10 +318,10 @@ footer {
 
 
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 80%;
-  }
+@media (min-width: 1000px) {
+  // .container {
+  //   max-width: 80%;
+  // }
 
   nav {
     .nav {
@@ -469,5 +468,11 @@ footer {
       flex-direction: row;
       margin-top: 40px;
     }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 80%;
   }
 }

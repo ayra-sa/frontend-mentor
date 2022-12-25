@@ -183,7 +183,7 @@ a {
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
     body {
         background: url(images/bg-desktop.png) center no-repeat;
         background-size: cover;

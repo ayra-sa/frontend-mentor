@@ -86,7 +86,7 @@ nav .nav_right {
   transition: 0.3s ease;
   left: -100%;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   top: 75px;
   background-color: #2b272f;
   color: #fafafa;
@@ -329,10 +329,7 @@ footer .footer_btm-menu ul li a:hover {
   margin-bottom: 20px;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 80%;
-  }
+@media (min-width: 1000px) {
   nav .nav_wrap {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -486,6 +483,12 @@ footer .footer_btm-menu ul li a:hover {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

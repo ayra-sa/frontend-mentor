@@ -234,10 +234,7 @@ ul li {
 
 
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 70%;
-  }
+@media (min-width: 1000px) {
 
   .card_wrapper {
     flex-direction: row;
@@ -267,5 +264,11 @@ ul li {
 
   .card:nth-child(2) {
     padding: 50px 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 70%;
   }
 }

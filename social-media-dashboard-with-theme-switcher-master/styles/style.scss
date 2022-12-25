@@ -293,10 +293,14 @@ nav {
 .attribution {
   margin: 40px 0;
   text-align: center;
+
+  a {
+    font-weight: 700;
+  }
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }

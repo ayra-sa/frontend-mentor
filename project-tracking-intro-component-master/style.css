@@ -111,6 +111,7 @@ nav,
   cursor: pointer;
   border-bottom: 1px solid transparent;
   transition: 0.3s ease;
+  font-size: .65em;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
@@ -185,9 +186,9 @@ h1 {
 
 .button_wrap {
   margin-top: 40px;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  gap: 10px; */
+  column-gap: 25px;
 }
 
 .btn_primary {
@@ -223,14 +224,17 @@ h1 {
 }
 
 footer {
-  /* position: absolute; */
   width: 100%;
   text-align: center;
-  /* bottom: 0; */
   margin-bottom: 20px;
+  font-size: .75em;
 }
 
-@media (min-width: 1280px) {
+footer a {
+  font-weight: 700;
+}
+
+@media (min-width: 1000px) {
   body {
     height: 100vh;
   }
@@ -280,6 +284,10 @@ footer {
     max-width: 60%;
   }
 
+  .btn {
+    font-size: inherit;
+  }
+
   .btn_primary {
     margin-right: 20px;
   }
@@ -290,7 +298,17 @@ footer {
 
   .content_right img {
     position: absolute;
-    right: -25%;
+    right: -43%;
     top: 10%;
+  }
+
+  footer {
+    font-size: inherit;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content_right img {
+    right: -25%;
   }
 }

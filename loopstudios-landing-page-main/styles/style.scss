@@ -367,7 +367,7 @@ footer {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   h2 {
     font-size: 2.8em;
   }
@@ -398,81 +398,82 @@ footer {
       }
     }
   }
-}
-
-.hero {
-  h1 {
-    width: calc(100% - 40%);
-    padding: 30px;
-    font-size: 3.5em;
-  }
-}
-
-.leader {
-  &_wrap {
-    flex-direction: row;
-    position: relative;
-  }
-
-  &_content {
-    position: absolute;
-    text-align: left;
-    inset: auto 0 0 50%;
-    background-color: $white;
-    padding: 80px 0 0 80px;
-  }
-}
-
-.creations {
-  &_top {
-    display: flex;
-
-    &-mobile {
-      display: none;
+  .hero {
+    h1 {
+      width: calc(100% - 40%);
+      padding: 30px;
+      font-size: 3.5em;
     }
   }
-
-  &_wrap {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .card {
-      flex: 1 20%;
-
-      p {
-        font-size: 2em;
-        max-width: 55%;
-      }
-    }
-  }
-}
-
-footer {
-  .footer {
+  
+  .leader {
     &_wrap {
-      @extend .flex_center;
+      flex-direction: row;
+      position: relative;
     }
-
-    &_left {
-      flex: 1;
+  
+    &_content {
+      position: absolute;
       text-align: left;
-
-      ul {
-        flex-direction: row;
-        font-family: $font;
-        font-weight: 400;
-        column-gap: 20px;
+      inset: auto 0 0 50%;
+      background-color: $white;
+      padding: 80px 0 0 80px;
+    }
+  }
+  
+  .creations {
+    &_top {
+      display: flex;
+  
+      &-mobile {
+        display: none;
       }
     }
-
-    &_right {
-      flex: 1;
-      text-align: right;
-
-      .socmed {
-        place-content: unset;
-        justify-content: flex-end;
+  
+    &_wrap {
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      .card {
+        flex: 1 20%;
+  
+        p {
+          font-size: 2em;
+          max-width: 55%;
+        }
+      }
+    }
+  }
+  
+  footer {
+    .footer {
+      &_wrap {
+        display: flex;
+        align-items: center;
+      }
+  
+      &_left {
+        flex: 1;
+        text-align: left;
+  
+        ul {
+          flex-direction: row;
+          font-family: $font;
+          font-weight: 400;
+          column-gap: 20px;
+        }
+      }
+  
+      &_right {
+        flex: 1;
+        text-align: right;
+  
+        .socmed {
+          place-content: unset;
+          justify-content: flex-end;
+        }
       }
     }
   }
 }
+
