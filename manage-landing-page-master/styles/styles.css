@@ -183,10 +183,15 @@ a {
   color: inherit;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 1em;
   color: #9095a7;
+  position: relative;
 }
 
 .container {
@@ -205,7 +210,7 @@ h1 {
   font-size: 2.5em;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   h1 {
     font-size: 3.2em;
   }
@@ -292,7 +297,7 @@ nav .nav-wrap {
           align-items: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -321,7 +326,7 @@ nav .nav-right.active {
   display: block;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-right {
     position: static;
     background-color: unset;
@@ -378,7 +383,7 @@ nav .nav-menu a:hover {
   color: #f25f3a;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-menu {
     padding: unset;
     margin-top: unset;
@@ -410,7 +415,7 @@ nav .nav-mobile.active .close {
   display: block;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-mobile {
     display: none;
   }
@@ -429,7 +434,7 @@ nav .nav-mobile.active .close {
   z-index: -1;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .bg {
     inset: -20% -20% auto auto;
   }
@@ -441,7 +446,7 @@ nav .nav-mobile.active .close {
           align-items: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -462,7 +467,7 @@ nav .nav-mobile.active .close {
           flex: 1;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .content .left {
     margin-top: unset;
   }
@@ -479,7 +484,7 @@ nav .nav-mobile.active .close {
   margin: 10px 0 20px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .content .right {
     text-align: left;
   }
@@ -495,7 +500,7 @@ nav .nav-mobile.active .close {
   row-gap: 40px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .manage .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -514,7 +519,7 @@ nav .nav-mobile.active .close {
   margin-top: 10px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .manage .content .left {
     text-align: left;
   }
@@ -529,7 +534,7 @@ nav .nav-mobile.active .close {
   counter-increment: list-counter;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .manage .content .right .list {
     margin-bottom: 40px;
   }
@@ -572,13 +577,13 @@ nav .nav-mobile.active .close {
   -o-border-radius: 50px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .manage .content .right .list b {
     background-color: transparent;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .manage .content .right .list p {
     padding-left: 70px;
   }
@@ -588,7 +593,7 @@ nav .nav-mobile.active .close {
   text-align: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .testimonial {
     overflow: auto;
   }
@@ -600,7 +605,7 @@ nav .nav-mobile.active .close {
   height: 40vh;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .testimonial .testi-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,7 +632,7 @@ nav .nav-mobile.active .close {
           align-items: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .testimonial .testi-wrap .testi {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -649,7 +654,7 @@ nav .nav-mobile.active .close {
   margin-top: -20%;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .testimonial .testi-wrap .testi figure {
     margin-top: -6%;
   }
@@ -689,7 +694,7 @@ nav .nav-mobile.active .close {
   background-color: #f25f3a;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .testimonial .dot .circle {
     display: none;
   }
@@ -712,7 +717,7 @@ nav .nav-mobile.active .close {
   color: white;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .simplify .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -729,7 +734,7 @@ footer {
   padding: 40px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer {
     padding: 60px 0;
   }
@@ -755,13 +760,13 @@ footer .footer-wrap .copy {
   font-size: .9em;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-wrap .copy {
     inset: auto 0 0 auto;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -806,7 +811,7 @@ footer .footer-left .socmed img {
   height: 38px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -862,7 +867,7 @@ footer .footer-menu li a:hover {
   color: #f25f3a;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-menu {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -917,7 +922,7 @@ footer .footer-right form .input.error small {
   display: block;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-right {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -928,12 +933,12 @@ footer .footer-right form .input.error small {
 .pattern {
   position: absolute;
   z-index: -1;
-  inset: 70% -60% auto auto;
+  inset: 20% -53% auto auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .pattern {
-    inset: 140% auto auto -28%;
+    inset: 45% auto auto -43%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

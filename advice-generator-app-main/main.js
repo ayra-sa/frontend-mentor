@@ -3,8 +3,6 @@ const url = "https://api.adviceslip.com/advice";
 const fetchAdvice = async (e) => {
   let response = await fetch(url);
   let data = await response.json();
-  // let dataJson = await response.json()
-  // let html = ''
 
   const display = document.getElementById("main");
 
@@ -16,7 +14,7 @@ const fetchAdvice = async (e) => {
         <span>advice #${data.slip.id}</span>
         <p>" ${data.slip.advice} "</p>
         <picture>
-          <source media="(min-width: 1280px)" srcset="images/pattern-divider-desktop.svg">
+          <source media="(min-width: 1200px)" srcset="images/pattern-divider-desktop.svg">
           <img src="images/pattern-divider-mobile.svg" alt="pattern">
         </picture>
 

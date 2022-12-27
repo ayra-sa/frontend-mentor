@@ -371,7 +371,7 @@ button:hover {
   background-color: #dde7ee;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 60%;
   }
@@ -382,5 +382,9 @@ button:hover {
   margin: 40px 0;
   width: 100%;
   text-align: center;
+}
+
+.attribution a {
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

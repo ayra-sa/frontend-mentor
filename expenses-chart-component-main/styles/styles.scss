@@ -125,6 +125,7 @@ p {
   text-align: center;
   margin: 40px 0;
   display: inline-block;
+  font-size: .7em;
 
   a {
     font-weight: 700;
@@ -132,6 +133,7 @@ p {
 
   @media (min-width: 1000px) {
     margin: unset;
+    font-size: inherit;
     position: absolute;
     inset: auto auto 20px auto;
   }

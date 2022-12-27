@@ -194,7 +194,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }
@@ -290,7 +290,7 @@ nav .nav-right.active {
   -o-transform: translateX(0);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-right {
     position: static;
     padding: unset;
@@ -331,7 +331,7 @@ nav .nav-menu {
   border-bottom: 1px solid rgba(221, 221, 221, 0.3);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -356,7 +356,7 @@ nav .nav-button {
   row-gap: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-button {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -389,7 +389,7 @@ nav .nav-mobile div {
   background-color: #bfbfbf;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-mobile {
     display: none;
   }
@@ -401,7 +401,7 @@ nav .nav-mobile div {
   min-height: 100vh;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero {
     overflow-x: hidden;
   }
@@ -430,7 +430,7 @@ nav .nav-mobile div {
   margin: 10px 0 20px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -446,7 +446,7 @@ nav .nav-mobile div {
   }
   .hero .content .left {
     position: absolute;
-    inset: 0 -10% 0 auto;
+    inset: 0 -25% 0 auto;
   }
   .hero .content .right {
     width: 50%;
@@ -458,6 +458,12 @@ nav .nav-mobile div {
   }
   .hero .content .right p {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero .content .left {
+    inset: 0 -10% 0 auto;
   }
 }
 
@@ -520,7 +526,7 @@ nav .nav-mobile div {
   -o-border-radius: 0 10px 0 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .advanced form::after {
     background: url(../images/bg-shorten-desktop.svg) no-repeat center;
     background-size: cover;
@@ -611,7 +617,7 @@ nav .nav-mobile div {
   display: block;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .advanced form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -717,7 +723,7 @@ nav .nav-mobile div {
   z-index: -1;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .advanced .list-wrap .list:not(:nth-child(1))::before {
     display: none;
   }
@@ -736,7 +742,7 @@ nav .nav-mobile div {
   -o-border-radius: 8px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .advanced .list-wrap .list::after {
     inset: 100px 0 0 0;
   }
@@ -758,7 +764,7 @@ nav .nav-mobile div {
   margin-bottom: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .advanced .list-wrap .list:nth-child(2) {
     position: relative;
     margin-top: 40px;
@@ -771,7 +777,7 @@ nav .nav-mobile div {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .advanced .list-wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -820,7 +826,7 @@ nav .nav-mobile div {
   z-index: -1;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .boost::after {
     background: url(../images/bg-boost-desktop.svg) no-repeat center;
   }
@@ -845,7 +851,7 @@ footer .footer-wrap {
           align-items: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -857,7 +863,7 @@ footer .footer-wrap {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -865,7 +871,7 @@ footer .footer-wrap {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -913,7 +919,7 @@ footer .footer-menu ul li a:hover {
   color: #2acfcf;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   footer .footer-menu {
     display: -webkit-box;
     display: -ms-flexbox;

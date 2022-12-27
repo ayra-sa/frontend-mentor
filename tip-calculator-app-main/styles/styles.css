@@ -204,15 +204,16 @@ body {
   background-color: white;
   border-radius: 20px;
   padding: 30px;
+  margin-top: 100px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .wrapper {
-    max-width: 70%;
+    max-width: 85%;
     margin-inline: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,6 +221,7 @@ body {
     -webkit-column-gap: 20px;
             column-gap: 20px;
     height: 500px;
+    margin-top: unset;
   }
   .wrapper .top,
   .wrapper .count {
@@ -238,6 +240,12 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 70%;
   }
 }
 
@@ -306,7 +314,7 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .tip button,
   .tip input {
     width: calc(100% / 3.5);
@@ -438,7 +446,7 @@ input[type="number"] {
   opacity: 0.7;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .count {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -454,10 +462,20 @@ input[type="number"] {
 }
 
 .attribution {
-  position: absolute;
-  inset: auto auto 40px auto;
   text-align: center;
   width: 100%;
   color: white;
+  font-size: .45em;
+  margin: 40px 0;
+}
+
+.attribution a {
+  font-weight: 700;
+}
+
+@media (min-width: 1000px) {
+  .attribution {
+    font-size: inherit;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

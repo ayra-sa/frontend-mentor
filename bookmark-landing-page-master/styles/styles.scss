@@ -127,6 +127,7 @@ nav {
       background-color: $VeryDarkBlue-bgNav;
       color: white;
       inset: 0;
+      z-index: 44;
       padding: 20% 30px;
       transition: 0.3s ease;
       transform: translateY(-150%);

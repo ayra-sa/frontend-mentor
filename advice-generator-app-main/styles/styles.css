@@ -203,10 +203,17 @@ body {
 
 #main {
   background-color: #323a49;
-  max-width: 90%;
+  width: 90%;
   margin-inline: auto;
   border-radius: 10px;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
   text-align: center;
   position: relative;
   color: #cee3e9;
@@ -216,7 +223,7 @@ body {
   -o-border-radius: 10px;
 }
 
-#main span {
+#main .content span {
   color: #52ffa8;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -225,42 +232,72 @@ body {
   letter-spacing: 0.2em;
 }
 
-#main picture img {
+#main .content picture img {
   margin: 40px auto;
 }
 
-#main button {
+#main .content button {
   background-color: #52ffa8;
   padding: 15px;
   border-radius: 50px;
   position: absolute;
-  inset: auto 45% -25px 45%;
+  width: 55px;
+  inset: auto 45% -25px 44%;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   #main {
-    width: calc(100% - 60%);
-    height: 45vh;
-    padding: 40px 60px;
+    width: 80%;
+    min-height: 45vh;
+    padding: 60px;
   }
-  #main picture img {
+  #main .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+  #main .content span {
+    font-size: 1em;
+  }
+  #main .content p {
+    font-size: 2em;
+    line-height: 70px;
+  }
+  #main .content picture img {
     margin-top: 80px;
   }
-  #main button {
-    inset: auto 46% -25px 46%;
+  #main .content button {
+    inset: auto 45% -25px 47%;
   }
 }
 
 .attribution {
-  position: absolute;
   width: 100%;
   text-align: center;
-  inset: auto auto 20px auto;
-  font-size: .65em;
+  font-size: .5em;
   color: white;
+  margin: 40px 0;
+}
+
+.attribution a {
+  color: #52ffa8;
+}
+
+@media (min-width: 1200px) {
+  .attribution {
+    margin: 80px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

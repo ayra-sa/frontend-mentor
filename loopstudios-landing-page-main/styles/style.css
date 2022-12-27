@@ -58,11 +58,11 @@ h2 {
   border: 1px solid black;
   padding: 8px 25px;
   letter-spacing: 0.2em;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -207,7 +207,7 @@ nav .nav_mobile.active .close {
 .hero h1 {
   border: 1px solid white;
   padding: 15px;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .leader {
@@ -263,11 +263,11 @@ nav .nav_mobile.active .close {
 
 .creations_wrap .card {
   position: relative;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -277,16 +277,16 @@ nav .nav_mobile.active .close {
   inset: 0 0 4px 0;
   background-color: transparent;
   opacity: 0;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .creations_wrap .card:hover::after {
   background-color: white;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .creations_wrap .card:hover p {
@@ -296,15 +296,15 @@ nav .nav_mobile.active .close {
 .creations_wrap .card p {
   position: absolute;
   color: white;
-  transition: .3s ease;
+  transition: 0.3s ease;
   z-index: 5;
   inset: auto auto 20px 20px;
   text-transform: uppercase;
   font-size: 1.4em;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 footer {

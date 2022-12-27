@@ -21,7 +21,7 @@ const cardList = data
     return `
         <div class="card" key=${index}>
             <div class="card-top ${d.title.toLowerCase()}">
-                <img src="./images/icon-${d.title}.svg" alt="icon ${d.title}" />
+                <img src="./images/icon-${d.title.toLowerCase()}.svg" alt="icon ${d.title.toLowerCase()}" />
             </div>
             <div class="card-bottom">
                 <div class="card-bottom-title">

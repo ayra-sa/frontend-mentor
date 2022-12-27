@@ -228,7 +228,7 @@ nav {
   z-index: 99;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   nav {
     padding: 40px 0;
   }
@@ -250,7 +250,7 @@ nav .nav-wrap .brand {
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   nav .nav-wrap .brand {
     margin: unset;
   }
@@ -274,7 +274,7 @@ nav .nav-mobile.active .close {
   display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   nav .nav-mobile {
     display: none;
   }
@@ -337,7 +337,7 @@ nav .nav-menu a:hover::after {
   background-color: white;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   nav .nav-menu {
     position: static;
     transform: unset;
@@ -362,7 +362,12 @@ nav .nav-menu a:hover::after {
   display: block;
 }
 
-@media (min-width: 1200px) {
+.hero .content.active picture img {
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 1000px) {
   .hero .content.active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,17 +379,27 @@ nav .nav-menu a:hover::after {
   .hero .content.active picture {
     width: 59%;
   }
+  .hero .content.active picture img {
+    height: 60vh;
+  }
   .hero .content.active .desc {
     width: 41%;
+    height: unset;
   }
 }
 
 .hero .content .desc {
-  margin: 20px 0;
-  padding: 20px;
+  padding: 40px 30px;
+  height: 50vh;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .hero .content .desc {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1000px) {
   .hero .content .desc {
     padding: 20px 60px;
   }
@@ -393,11 +408,25 @@ nav .nav-menu a:hover::after {
   }
 }
 
-.hero .content .desc p {
+.hero .content .desc .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.hero .content .desc .wrapper p {
   margin: 20px 0;
 }
 
-.hero .content .desc button {
+.hero .content .desc .wrapper button {
   background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.9em;
@@ -413,7 +442,7 @@ nav .nav-menu a:hover::after {
   color: black;
 }
 
-.hero .content .desc button::after {
+.hero .content .desc .wrapper button::after {
   content: url(../images/icon-arrow.svg);
 }
 
@@ -423,7 +452,7 @@ nav .nav-menu a:hover::after {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: absolute;
-  inset: 46% 0 auto auto;
+  inset: 49.5vh 0 auto auto;
 }
 
 .hero .arrows button {
@@ -443,7 +472,7 @@ nav .nav-menu a:hover::after {
   background-color: #454545;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .hero .arrows {
     inset: auto 41% 0 auto;
   }
@@ -459,7 +488,11 @@ nav .nav-menu a:hover::after {
           flex-direction: column;
 }
 
-@media (min-width: 1200px) {
+.bottom figure img {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
   .bottom {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -484,9 +517,19 @@ nav .nav-menu a:hover::after {
   letter-spacing: 0.2em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+  .bottom .info {
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1400px) {
   .bottom .info {
     padding: 60px 20px;
+  }
+  .bottom .info .wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 

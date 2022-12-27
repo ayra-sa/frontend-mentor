@@ -562,7 +562,7 @@ body {
 
 .attribution {
   font-family: "League Spartan", sans-serif;
-  font-size: 11px;
+  font-size: .9em;
   text-align: center;
   padding: 1rem 0;
   cursor: default;
@@ -570,5 +570,6 @@ body {
 
 .attribution a {
   color: #3e52a3;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

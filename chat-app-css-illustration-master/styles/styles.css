@@ -283,7 +283,6 @@ body {
 .phone {
   background-color: #f5f3f7;
   border: 18px solid white;
-  max-width: 90%;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 3px #ddd;
           box-shadow: 0 2px 3px #ddd;

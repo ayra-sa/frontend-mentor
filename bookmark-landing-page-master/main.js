@@ -37,10 +37,17 @@ function toggleItem () {
 
 const navMobile = document.querySelector(".nav-mobile")
 const navMenu = document.querySelector(".nav-right")
+const body = document.body
 
 navMobile.addEventListener("click", () => {
     navMobile.classList.toggle("active")
     navMenu.classList.toggle("open")
+
+    if (navMenu.classList.contains('active')) {
+        body.style.overflowY = 'hidden'
+    } else {
+        body.style.overflowY = 'unset'
+    }
 })
 
 const form = document.getElementById("form")

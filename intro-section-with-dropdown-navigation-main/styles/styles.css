@@ -185,8 +185,11 @@ a {
 
 body {
   font-size: 1em;
-  overflow-x: hidden;
   font-family: "Epilogue", sans-serif;
+}
+
+.body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -194,7 +197,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }
@@ -250,7 +253,7 @@ nav .nav-wrap {
           justify-content: space-between;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-wrap {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
@@ -293,7 +296,7 @@ nav .nav-right.active {
   -o-transform: translateX(0);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-right {
     position: static;
     height: unset;
@@ -395,7 +398,7 @@ nav .nav-menu .menu.dd.expand .dropdown a {
           align-items: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-menu .menu:hover p::after {
     content: url(../images/icon-arrow-up.svg);
   }
@@ -420,7 +423,7 @@ nav .nav-menu .dropdown {
   display: none;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -465,7 +468,7 @@ nav .nav-btn {
   margin-top: 40px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-btn {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -487,7 +490,7 @@ nav .nav-mobile {
   z-index: 44;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   nav .nav-mobile {
     display: none;
   }
@@ -520,7 +523,7 @@ nav .nav-mobile.active .close {
   gap: 50px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -545,7 +548,7 @@ nav .nav-mobile.active .close {
   margin: 20px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .wrap .content {
     text-align: left;
   }
@@ -565,11 +568,12 @@ nav .nav-mobile.active .close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .hero .wrap .content .clients {
     margin-top: 80px;
   }
@@ -585,5 +589,10 @@ nav .nav-mobile.active .close {
   text-align: center;
   margin: 40px 0;
   display: block;
+  font-size: .7em;
+}
+
+.attribution a {
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

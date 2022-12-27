@@ -232,14 +232,14 @@ p {
   text-align: center;
   color: white;
   position: relative;
-  height: 45vh;
+  height: 48vh;
   padding-top: 20px;
 }
 
 @media (min-width: 1000px) {
   .top {
     padding-top: 60px;
-    height: 35vh;
+    height: 42vh;
   }
 }
 
@@ -252,6 +252,13 @@ p {
 
 .top h1 {
   margin-bottom: 20px;
+  font-size: 1.7em;
+}
+
+@media (min-width: 375px) {
+  .top h1 {
+    font-size: 2em;
+  }
 }
 
 .top form {
@@ -413,20 +420,27 @@ p {
 }
 
 .attribution {
-  position: absolute;
-  inset: auto 40% 0 0;
   font-size: 0.5em;
-  background-color: white;
-  padding: 2px 5px;
+  background: url(../images/pattern-bg.png) center no-repeat;
+  background-size: cover;
+  padding: 10px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: white;
 }
 
 .attribution a {
   font-weight: 700;
 }
 
+@media (min-width: 375px) {
+  .attribution {
+    font-size: 0.7em;
+  }
+}
+
 @media (min-width: 1000px) {
   .attribution {
-    inset: auto 13% 0 0;
     font-size: inherit;
   }
 }
