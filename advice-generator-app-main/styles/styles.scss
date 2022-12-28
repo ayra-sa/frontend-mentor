@@ -26,6 +26,7 @@ body {
 
 #main {
   background-color: $DarkGrayishBlue;
+  margin-top: 40px;
   width: 90%;
   margin-inline: auto;
   border-radius: 10px;
@@ -86,7 +87,7 @@ body {
       }
   
       p {
-        font-size: 2em;
+        font-size: inherit;
         line-height: 70px;
       }
       

@@ -203,6 +203,7 @@ body {
 
 #main {
   background-color: #323a49;
+  margin-top: 40px;
   width: 90%;
   margin-inline: auto;
   border-radius: 10px;
@@ -272,7 +273,7 @@ body {
     font-size: 1em;
   }
   #main .content p {
-    font-size: 2em;
+    font-size: inherit;
     line-height: 70px;
   }
   #main .content picture img {
