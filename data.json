@@ -327,5 +327,12 @@
         "image": "ip-address-tracker-master/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/ip-address-tracker-master",
         "link": "https://ayra-sa.github.io/frontend-mentor/ip-address-tracker-master/index.html"
+      },
+      {
+        "name": "Todo app challenge",
+        "level": "intermediate",
+        "image": "todo-app-main/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/todo-app-main",
+        "link": "https://ayra-sa.github.io/frontend-mentor/todo-app-main/index.html"
       }
   ]

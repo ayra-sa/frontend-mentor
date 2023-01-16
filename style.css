@@ -15,6 +15,7 @@
   --lightGray: hsl(204, 43%, 93%);
   --grayishBlue: hsl(218, 22%, 67%);
   --black: rgb(39, 36, 36);
+  --blackBackground: rgba(39, 36, 36, 0.6);
 }
 
 /* VAR */
@@ -32,7 +33,7 @@ img {
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--lightGray);
-  /* color: var(--white); */
+  overflow-y: hidden;
 }
 
 nav {
@@ -48,6 +49,52 @@ nav a {
   margin-inline: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+}
+
+.modal_wrap {
+  display: none;
+}
+
+.modal_wrap.open{
+  position: absolute;
+  inset: 0;
+  background-color: var(--blackBackground);
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+.modal_content {
+  background-color: var(--lightGray);
+  color: var(--black);
+  padding: 40px 60px;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.modal_content p {
+  margin: 30px 0;
+}
+
+.modal_content a {
+  font-weight: 600;
+  color: var(--darkCyan);
+}
+
+.modal_content button {
+  width: 30%;
+}
+
 .top {
   margin-bottom: 80px;
 }
@@ -61,6 +108,7 @@ nav a {
 .top {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .btn_tag {
@@ -126,6 +174,7 @@ nav a {
   border-radius: 20px;
   font-weight: 700;
   transition: .3s ease;
+  border: none;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -159,7 +208,7 @@ nav a {
   margin-bottom: 10px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   #data {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -167,7 +216,7 @@ nav a {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1020px) {
   .container {
     max-width: 80%;
   }

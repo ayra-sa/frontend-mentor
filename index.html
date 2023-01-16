@@ -10,24 +10,33 @@
 
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <nav>
                 <a href="https://www.frontendmentor.io/profile/ayra-sa">ayra</a>
             </nav>
-        </header>
-    
-        <section>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
             <div class="top">
-                <button class="btn_tag active" >All</button>
-                <button class="btn_tag" >Newbie</button>
-                <button class="btn_tag" >Junior</button>
-                <button class="btn_tag" >Intermediate</button>
+                <button class="btn_tag active">All</button>
+                <button class="btn_tag">Newbie</button>
+                <button class="btn_tag">Junior</button>
+                <button class="btn_tag">Intermediate</button>
             </div>
             <div id="data"></div>
-            <!-- <a href="interactive-rating-component-main/design/desktop-preview.jpg"></a> -->
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <section class="modal_wrap open">
+        <div class="modal_content">
+            <h1>Welcome!</h1>
+            <p>This is my solutions for challenges on <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a></p>
+            <button id="continue" class="btn_primary">OK</button>
+        </div>
+    </section>
 
     <script type="module" src="main.js"></script>
 </body>

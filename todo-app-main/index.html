@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="title">
+          <h1>Todo</h1>
+          <div class="switch">
+            <button id="light">
+              <img src="./images/icon-sun.svg" alt="light" />
+            </button>
+            <button id="dark">
+              <img src="./images/icon-moon.svg" alt="dark" />
+            </button>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="todo">New todo</label>
+          <input
+            type="text"
+            name="todo"
+            id="todo"
+            placeholder="Create a new todo.."
+          />
+          <small>Error</small>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="top">
+          <ul class="list-wrap"></ul>
+          <div class="items">
+            <p><span class="num"></span> item(s) left</p>
+            <button id="clear">Clear Completed</button>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <button class="btn-filter active" id="all">All</button>
+          <button class="btn-filter" id="active">Active</button>
+          <button class="btn-filter" id="completed">Completed</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Drag and drop to reorder list -->
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/ayra-sa">ayra-sa</a>.
+      </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
