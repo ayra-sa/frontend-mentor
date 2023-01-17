@@ -263,6 +263,8 @@ switchBtn.addEventListener("click", () => {
 
 let dragSrcEl = null;
 
+let tasks = JSON.parse(localStorage.getItem("tasks"));
+
 const handleDragStart = (e) => {
   const t = e.target;
   t.style.opacity = "0.4";
@@ -310,12 +312,12 @@ const handleDrop = (e) => {
   if (e.stopPropagation) {
     e.stopPropagation();
   }
-  
-  if (dragSrcEl != t) {
-    const data = e.dataTransfer.getData("text")
-    dragSrcEl.innerHTML = t.innerHTML
-    t.innerHTML = data
-  }
+
+  // if (dragSrcEl != t) {
+  //   const data = e.dataTransfer.getData("text")
+  //   dragSrcEl.innerHTML = t.innerHTML
+  //   t.innerHTML = data
+  // }
   return false;
 };
 
