@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  /* Remove default margin on everything */
+  margin: 0;
+  /* Remove default padding on everything */
+  padding: 0;
+  /* Calc `em` based line height, bigger line height for smaller font size and smaller line height for bigger font size: https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/ */
+  line-height: calc(0.25rem + 1em + 0.25rem);
+}
+
+/* Use a more-intuitive box-sizing model on everything */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove border and set sensible defaults for backgrounds, on all elements except fieldset progress and meter */
+*:where(:not(fieldset, progress, meter)) {
+  border-width: 0;
+  border-style: solid;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+html {
+  /* Allow percentage-based heights in the application */
+  block-size: 100%;
+  /* Making sure text size is only controlled by font-size */
+  -webkit-text-size-adjust: none;
+}
+
+/* Smooth scrolling for users that don't prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  /* https://marco.org/2012/11/15/text-rendering-optimize-legibility */
+  text-rendering: optimizeSpeed;
+  /* Allow percentage-based heights in the application */
+  min-block-size: 100%;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter#example_2 */
+  /* scrollbar-gutter: stable both-edges; Removed until this bug is fixed: https://bugs.chromium.org/p/chromium/issues/detail?id=1318404#c2 */
+}
+
+/* Improve media defaults */
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, svg, video) {
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+/* Remove stroke and set fill colour to the inherited font colour */
+:where(svg) {
+  stroke: none;
+  fill: currentColor;
+}
+
+/* SVG's without a fill attribute */
+:where(svg):where(:not([fill])) {
+  /* Remove fill and set stroke colour to the inherited font colour */
+  stroke: currentColor;
+  fill: none;
+  /* Rounded stroke */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Set a size for SVG's without a width attribute */
+:where(svg):where(:not([width])) {
+  inline-size: 5rem;
+}
+
+/* Remove built-in form typography styles */
+:where(input, button, textarea, select),
+:where(input[type="file"])::-webkit-file-upload-button {
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+/* Change textarea resize to vertical only and block only if the browser supports that */
+:where(textarea) {
+  resize: vertical;
+}
+
+@supports (resize: block) {
+  :where(textarea) {
+    resize: block;
+  }
+}
+
+/* Avoid text overflows */
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/* Fix h1 font size inside article, aside, nav, and section */
+h1 {
+  font-size: 2em;
+}
+
+/* Position list marker inside */
+:where(ul, ol) {
+  list-style-position: inside;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+:where(ul, ol)[role="list"] {
+  list-style: none;
+}
+
+/* More readable underline style for anchor tags without a class. This could be set on anchor tags globally, but it can cause conflicts. */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make it clear that interactive elements are interactive */
+:where(
+a[href],
+area,
+button,
+input,
+label[for],
+select,
+summary,
+textarea,
+[tabindex]:not([tabindex*="-"])
+) {
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+:where(input[type="file"]) {
+  cursor: auto;
+}
+
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  cursor: pointer;
+}
+
+/* Animate focus outline */
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    -webkit-transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+  }
+  :where(:not(:active)):focus-visible {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+}
+
+:where(:not(:active)):focus-visible {
+  outline-offset: 5px;
+}
+
+/* Make sure users can't select button text */
+:where(
+button,
+button[type],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]
+),
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+/* Disabled cursor for disabled buttons */
+:where(
+button,
+button[type],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]
+)[disabled] {
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 14px;
+  background-color: #1e1f29;
+  position: relative;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../images/bg-stars.svg) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10%;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 1400px) {
+  header {
+    font-size: 1.5em;
+  }
+}
+
+main .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  margin-top: 40px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 375px) {
+  main .countdown {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  main .countdown {
+    margin-top: 80px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+main .countdown .card {
+  width: calc(100% / 2.5);
+}
+
+@media (min-width: 375px) {
+  main .countdown .card {
+    width: calc(100% / 4.5);
+  }
+}
+
+@media (min-width: 768px) {
+  main .countdown .card {
+    width: calc(100% / 6);
+  }
+}
+
+main .countdown .card .flip-card {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 0 0 #191a24;
+          box-shadow: 0 8px 0 0 #191a24;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media (min-width: 1000px) {
+  main .countdown .card .flip-card {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  main .countdown .card .flip-card {
+    font-size: 6em;
+  }
+}
+
+main .countdown .title {
+  letter-spacing: 0.1em;
+  color: #8486a9;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 0.8em;
+}
+
+@media (min-width: 1000px) {
+  main .countdown .title {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  main .countdown .title {
+    font-size: 1.5em;
+  }
+}
+
+main .countdown .top-flip,
+main .countdown .bottom-flip {
+  position: absolute;
+}
+
+main .countdown .top-flip {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  transform: rotateX(0deg);
+  animation: flip-top 0.5s ease-in forwards;
+  -webkit-animation: flip-top 0.5s ease-in forwards;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+}
+
+main .countdown .bottom-flip {
+  bottom: 0;
+  animation: flip-bottom 0.5s ease-out 0.5s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  transform: rotateX(90deg);
+  -webkit-animation: flip-bottom 0.5s ease-out 0.5s;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+}
+
+main .countdown .top,
+main .countdown .bottom,
+main .countdown .top-flip,
+main .countdown .bottom-flip {
+  height: 33px;
+  width: 100%;
+  padding: 20px 15px;
+  color: #fb6087;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  main .countdown .top,
+  main .countdown .bottom,
+  main .countdown .top-flip,
+  main .countdown .bottom-flip {
+    height: 56px;
+  }
+}
+
+@media (min-width: 1400px) {
+  main .countdown .top,
+  main .countdown .bottom,
+  main .countdown .top-flip,
+  main .countdown .bottom-flip {
+    height: 66px;
+  }
+}
+
+main .countdown .top,
+main .countdown .top-flip {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #30324f;
+}
+
+main .countdown .bottom,
+main .countdown .bottom-flip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #343650;
+  -webkit-box-shadow: 0 2px rgba(70, 82, 114, 0.2) inset;
+          box-shadow: 0 2px rgba(70, 82, 114, 0.2) inset;
+}
+
+@-webkit-keyframes flip-top {
+  to {
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-top {
+  to {
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+  }
+}
+
+@-webkit-keyframes flip-bottom {
+  to {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+  }
+}
+
+@keyframes flip-bottom {
+  to {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+  }
+}
+
+footer {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding-top: 100px;
+  background: url(../images/pattern-hills.svg) center no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+footer .socmed {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

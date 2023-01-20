@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+// VARIABLES
+
+// Primary
+
+$Grayishblue: hsl(237, 18%, 59%);
+$Softred: hsl(345, 95%, 68%);
+
+// Neutral
+
+$White: hsl(0, 0%, 100%);
+$Darkdesaturatedblue: hsl(236, 21%, 26%);
+$Verydarkblue: hsl(235, 16%, 14%);
+$Verydarkblue2: hsl(234, 17%, 12%);
+
+$font: "Red Hat Text", sans-serif;
+$fontSize: 14px;
+
+// VARIABLES
+
+@import "reset";
+
+body {
+  font-size: $fontSize;
+  background-color: $Verydarkblue;
+  position: relative;
+  font-family: $font;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../images/bg-stars.svg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  color: $White;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10%;
+  letter-spacing: 0.2em;
+
+  @media (min-width: 1400px) {
+    font-size: 1.5em;
+  }
+}
+
+main {
+  .countdown {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 40px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: 375px) {
+      column-gap: 10px;
+      // flex-wrap: nowrap;
+    }
+
+    @media (min-width: 1000px) {
+      margin-top: 80px;
+      column-gap: 30px;
+    }
+
+    .card {
+      width: calc(100% / 2.5);
+
+      @media (min-width: 375px) {
+        width: calc(100% / 4.5);
+      }
+
+      @media (min-width: 768px) {
+        width: calc(100% / 6);
+      }
+
+      .flip-card {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 0 8px 0 0 $Verydarkblue2;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        @media (min-width: 1000px) {
+          font-size: 4rem;
+        }
+
+        @media (min-width: 1400px) {
+          font-size: 6em;
+        }
+      }
+    }
+
+    .title {
+      letter-spacing: 0.1em;
+      color: $Grayishblue;
+      text-transform: uppercase;
+      margin-top: 15px;
+      font-size: 0.8em;
+
+      @media (min-width: 1000px) {
+        font-size: 1em;
+      }
+
+      @media (min-width: 1400px) {
+        font-size: 1.5em;
+      }
+    }
+
+    .top-flip,
+    .bottom-flip {
+      position: absolute;
+    }
+
+    .top-flip {
+      transform-origin: bottom;
+      transform: rotateX(0deg);
+      animation: flip-top 0.5s ease-in forwards;
+      -webkit-animation: flip-top 0.5s ease-in forwards;
+      -webkit-transform: rotateX(0deg);
+      -moz-transform: rotateX(0deg);
+      -ms-transform: rotateX(0deg);
+      -o-transform: rotateX(0deg);
+    }
+
+    .bottom-flip {
+      bottom: 0;
+      animation: flip-bottom 0.5s ease-out 0.5s;
+      transform-origin: top;
+      transform: rotateX(90deg);
+      -webkit-animation: flip-bottom 0.5s ease-out 0.5s;
+      -webkit-transform: rotateX(90deg);
+      -moz-transform: rotateX(90deg);
+      -ms-transform: rotateX(90deg);
+      -o-transform: rotateX(90deg);
+    }
+
+    .top,
+    .bottom,
+    .top-flip,
+    .bottom-flip {
+      height: 33px;
+      width: 100%;
+      padding: 20px 15px;
+      color: $Softred;
+      overflow: hidden;
+      text-align: center;
+
+      @media (min-width: 1000px) {
+        height: 56px;
+      }
+      @media (min-width: 1400px) {
+        height: 66px;
+      }
+    }
+
+    .top,
+    .top-flip {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: hsl(236, 24%, 25%);
+    }
+
+    .bottom,
+    .bottom-flip {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: $Darkdesaturatedblue;
+      box-shadow: 0 2px hsla(224, 24%, 36%, 0.2) inset;
+    }
+
+    @keyframes flip-top {
+      to {
+        transform: rotateX(90deg);
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
+        -o-transform: rotateX(90deg);
+      }
+    }
+
+    @keyframes flip-bottom {
+      to {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+      }
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding-top: 100px;
+  background: url(../images/pattern-hills.svg) center no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+
+  .socmed {
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+  }
+}

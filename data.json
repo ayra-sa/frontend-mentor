@@ -334,5 +334,12 @@
         "image": "todo-app-main/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/todo-app-main",
         "link": "https://ayra-sa.github.io/frontend-mentor/todo-app-main/index.html"
+      },
+      {
+        "name": "Launch countdown timer challenge",
+        "level": "intermediate",
+        "image": "launch-countdown-timer-main/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/launch-countdown-timer-main",
+        "link": "https://ayra-sa.github.io/frontend-mentor/launch-countdown-timer-main/index.html"
       }
   ]
