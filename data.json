@@ -345,7 +345,7 @@
       {
         "name": "Calculator app challenge",
         "level": "intermediate",
-        "image": "calculator-app/design/desktop-preview.jpg",
+        "image": "calculator-app/src/assets/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/calculator-app",
         "link": "https://calculator-app-fementor.vercel.app/"
       }
