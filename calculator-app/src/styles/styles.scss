@@ -1,0 +1,338 @@
+@import "variable";
+@import "reset";
+
+body {
+  font-family: $font;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+
+  &.dark {
+    background-color: $Verydarkdesaturatedblue-mainbackground;
+    color: $White;
+
+    header {
+      .switch {
+        &-click::after {
+          background-color: $Verydarkdesaturatedblue-togglebackground;
+        }
+
+        &-button {
+          button {
+            &#a {
+              background-color: $Red-keybackground-toggle;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      .screen {
+        background-color: $Verydarkdesaturatedblue-screenbackground;
+      }
+
+      .btn-box {
+        background-color: $Verydarkdesaturatedblue-togglebackground;
+
+        .toggle {
+          box-shadow: 0px 4px 0px 0px $Grayishorange-keyshadow;
+          color: $Verydarkgrayishblue;
+          background-color: $Lightgrayishorange-keybackground;
+
+          &:hover {
+            background-color: $Lightgrayishorange-keybackground-hover;
+          }
+          
+          &.del,
+          &.reset {
+            background-color: $Desaturateddarkblue-keybackground;
+            color: $White;
+            box-shadow: 0px 4px 0px 0px $Desaturateddarkblue-keyshadow;
+            
+            &:hover {
+              background-color: $Desaturateddarkblue-keybackground-hover;
+            }
+          }
+          
+          &.equal {
+            color: $White;
+            background-color: $Red-keybackground-toggle;
+            box-shadow: 0px 4px 0px 0px $Darkred-keyshadow;
+            
+            &:hover {
+              background-color: $Red-keybackground-toggle-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.light {
+    background-color: $Lightgray-mainbackground;
+    color: $Verydarkgrayishyellow;
+
+    header {
+      .switch {
+        &-click::after {
+          background-color: $Grayishred-togglebackground-keypadbackground;
+        }
+
+        &-button {
+          button {
+            &#b {
+              background-color: $Orange-keybackground-toggle;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      .screen {
+        background-color: $Verylightgray-screenbackground;
+      }
+
+      .btn-box {
+        background-color: $Grayishred-togglebackground-keypadbackground;
+
+        .toggle {
+          background-color: $Lightgrayishyellow-keybackground;
+          box-shadow: 0px 4px 0px 0px $Darkgrayishorange-keyshadow;
+          
+          &:hover {
+            background-color: $Lightgrayishyellow-keybackground-hover;
+          }
+
+          &.del,
+          &.reset {
+            background-color: $Darkmoderatecyan-keybackground;
+            color: $White-text;
+            box-shadow: 0px 4px 0px 0px $Verydarkcyan-keyshadow;
+            
+            &:hover {
+              background-color: $Darkmoderatecyan-keybackground-hover;
+            }
+          }
+
+          &.equal {
+            color: $White-text;
+            background-color: $Orange-keybackground-toggle;
+            box-shadow: 0px 4px 0px 0px $Darkorange-keyshadow;
+            
+            &:hover {
+              background-color: $Orange-keybackground-toggle-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.purple {
+    background-color: $Verydarkviolet-mainbackground;
+    color: $Lightyellow;
+
+    header {
+      .switch {
+        &-click::after {
+          background-color: $Verydarkviolet-togglebackground-keypadbackground-screenbackground;
+        }
+
+        &-button {
+          button {
+            &#c {
+              background-color: $Purecyan-keybackground-toggle;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      .screen {
+        background-color: $Verydarkviolet-togglebackground-keypadbackground-screenbackground;
+      }
+
+      .btn-box {
+        background-color: $Verydarkviolet-togglebackground-keypadbackground-screenbackground;
+
+        .toggle {
+          background-color: $Verydarkviolet-keybackground;
+          box-shadow: 0px 4px 0px 0px $Darkmagenta-keyshadow;
+          
+          &:hover {
+            background-color: $Verydarkviolet-keybackground-hover;
+          }
+
+          &.del,
+          &.reset {
+            background-color: $Darkviolet-keybackground;
+            color: $White-text;
+            box-shadow: 0px 4px 0px 0px $Vividmagenta-keyshadow;
+            
+            &:hover {
+              background-color: $Darkviolet-keybackground-hover;
+            }
+          }
+
+          &.equal {
+            color: $Verydarkblue;
+            background-color: $Purecyan-keybackground-toggle;
+            background-color: $Purecyan-keybackground-toggle;
+            box-shadow: 0px 4px 0px 0px $Softcyan-keyshadow;
+            
+            &:hover {
+              background-color: $Purecyan-keybackground-toggle-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: 450px) {
+    max-width: 60%;
+  }
+
+  @media (min-width: 1000px) {
+    max-width: 40%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  a {
+    font-size: 2em;
+    letter-spacing: 0.02em;
+  }
+
+  .switch {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    &-click {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      padding: 5px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 50% 0 0 0;
+        z-index: -1;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+      }
+    }
+
+    &-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .switcher {
+        display: flex;
+      }
+
+      button {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+  }
+}
+
+main {
+  .screen {
+    border-radius: 8px;
+    padding: 0 10px;
+    line-height: 70px;
+    height: 70px;
+    text-align: right;
+    font-size: 2.5em;
+    transition: 0.3s ease;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+
+    &.max {
+      font-size: 1.8em;
+    }
+  }
+
+  .btn-box {
+    margin-top: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    .toggle {
+      border-radius: 3px;
+      background-color: transparent;
+      padding: 10px;
+      cursor: pointer;
+      letter-spacing: 0.07em;
+      font-size: 1.7em;
+      transition: 0.3s ease;
+      position: relative;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+
+      &.del,
+      &.reset,
+      &.equal {
+        font-size: 1.2em;
+      }
+
+      &.reset {
+        grid-column: span 2;
+      }
+
+      &.equal {
+        grid-column: span 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+
+// VARIABLE
+
+$font: 'League Spartan', sans-serif;
+$fontsize: 32px;
+
+    // Theme 1
+
+        // Backgrounds
+
+        $Verydarkdesaturatedblue-mainbackground: hsl(222, 26%, 31%);
+        $Verydarkdesaturatedblue-togglebackground: hsl(223, 31%, 20%);
+        $Verydarkdesaturatedblue-screenbackground: hsl(224, 36%, 15%);
+
+        // Keys
+
+        $Desaturateddarkblue-keybackground: hsl(225, 21%, 49%);
+        $Desaturateddarkblue-keybackground-hover: hsl(224, 32%, 72%);
+        $Desaturateddarkblue-keyshadow: hsl(224, 28%, 35%);
+
+        $Red-keybackground-toggle: hsl(6, 63%, 50%);
+        $Red-keybackground-toggle-hover: hsl(6, 76%, 61%);
+        $Darkred-keyshadow: hsl(6, 70%, 34%);
+
+        $Lightgrayishorange-keybackground: hsl(30, 25%, 89%);
+        $Lightgrayishorange-keybackground-hover: hsl(31, 100%, 95%);
+        $Grayishorange-keyshadow: hsl(28, 16%, 65%);
+
+        // Text
+
+        $Verydarkgrayishblue: hsl(221, 14%, 31%);
+        $White: hsl(0, 0%, 100%);
+
+    // Theme 2
+
+        // Backgrounds
+
+        $Lightgray-mainbackground: hsl(0, 0%, 90%);
+        $Grayishred-togglebackground-keypadbackground: hsl(0, 5%, 81%);
+        $Verylightgray-screenbackground: hsl(0, 0%, 93%);
+
+        // Keys
+
+        $Darkmoderatecyan-keybackground: hsl(185, 42%, 37%);
+        $Darkmoderatecyan-keybackground-hover: hsl(185, 35%, 54%);
+        $Verydarkcyan-keyshadow: hsl(185, 58%, 25%);
+
+        $Orange-keybackground-toggle: hsl(25, 98%, 40%);
+        $Orange-keybackground-toggle-hover: hsl(25, 75%, 54%);
+        $Darkorange-keyshadow: hsl(25, 99%, 27%);
+
+        $Lightgrayishyellow-keybackground: hsl(45, 7%, 89%);
+        $Lightgrayishyellow-keybackground-hover: hsl(42, 100%, 98%);
+        $Darkgrayishorange-keyshadow: hsl(35, 11%, 61%);
+
+        // Text
+
+        $Verydarkgrayishyellow: hsl(60, 10%, 19%);
+        $White-text: hsl(0, 0%, 100%);
+
+    // Theme 3
+
+        // Backgrounds
+
+        $Verydarkviolet-mainbackground: hsl(268, 75%, 9%);
+        $Verydarkviolet-togglebackground-keypadbackground-screenbackground: hsl(268, 71%, 12%);
+
+        // Keys
+
+        $Darkviolet-keybackground: hsl(281, 89%, 26%);
+        $Darkviolet-keybackground-hover: hsl(281, 62%, 42%);
+        $Vividmagenta-keyshadow: hsl(285, 91%, 52%);
+
+        $Purecyan-keybackground-toggle: hsl(176, 100%, 44%);
+        $Purecyan-keybackground-toggle-hover: hsl(176, 86%, 59%);
+        $Softcyan-keyshadow: hsl(177, 92%, 70%);
+
+        $Verydarkviolet-keybackground: hsl(268, 47%, 21%);
+        $Verydarkviolet-keybackground-hover: hsl(268, 37%, 39%);
+        $Darkmagenta-keyshadow: hsl(290, 70%, 36%);
+
+        // Text
+
+        $Lightyellow: hsl(52, 100%, 62%);
+        $Verydarkblue: hsl(198, 20%, 13%);
+        $White-text: hsl(0, 0%, 100%);
