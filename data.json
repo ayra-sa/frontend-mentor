@@ -326,27 +326,27 @@
         "level": "intermediate",
         "image": "ip-address-tracker-master/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/ip-address-tracker-master",
-        "link": "https://ayra-sa.github.io/frontend-mentor/ip-address-tracker-master/index.html"
+        "link": "https://ayra-sa.github.io/frontend-mentor/ip-address-tracker-master"
       },
       {
         "name": "Todo app challenge",
         "level": "intermediate",
         "image": "todo-app-main/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/todo-app-main",
-        "link": "https://ayra-sa.github.io/frontend-mentor/todo-app-main/index.html"
+        "link": "https://ayra-sa.github.io/frontend-mentor/todo-app-main"
       },
       {
         "name": "Launch countdown timer challenge",
         "level": "intermediate",
         "image": "launch-countdown-timer-main/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/launch-countdown-timer-main",
-        "link": "https://ayra-sa.github.io/frontend-mentor/launch-countdown-timer-main/index.html"
+        "link": "https://ayra-sa.github.io/frontend-mentor/launch-countdown-timer-main"
       },
       {
         "name": "Calculator app challenge",
         "level": "intermediate",
         "image": "calculator-app/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/calculator-app",
-        "link": "https://ayra-sa.github.io/frontend-mentor/calculator-app/index.html"
+        "link": "https://calculator-app-fementor.vercel.app/"
       }
   ]
