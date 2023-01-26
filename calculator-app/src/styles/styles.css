@@ -469,6 +469,7 @@ header .switch-button .switcher {
 }
 
 header .switch-button button {
+  color: transparent;
   width: 15px;
   height: 15px;
   border-radius: 50%;

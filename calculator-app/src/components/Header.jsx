@@ -34,7 +34,7 @@ const Header = () => {
             <div className="switch-button" key={toggle}>
               <span>{toggle}</span>
               <div className="switcher">
-                <button onClick={toggleTheme} id={toggle}></button>
+                <button onClick={toggleTheme} id={toggle}>{toggle}</button>
               </div>
             </div>
           ))}
