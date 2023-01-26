@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/ayra-sa/frontend-mentor/tree/main/calculator-app)
-- Live Site URL: [Live Site](https://ayra-sa.github.io/frontend-mentor/blogr-landing-page-main/index.html)
+- Live Site URL: [Live Site](https://calculator-app-fementor.vercel.app/)
 
 ## My process
 
