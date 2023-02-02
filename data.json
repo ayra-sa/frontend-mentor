@@ -348,5 +348,12 @@
         "image": "calculator-app/src/assets/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/calculator-app",
         "link": "https://calculator-app-fementor.vercel.app/"
+      },
+      {
+        "name": "E-Commerce product page challenge",
+        "level": "intermediate",
+        "image": "e-commerce-product-page-challenge/src/assets/design/desktop-preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/e-commerce-product-page-challenge",
+        "link": "https://e-commerce-product-page-challenge-fementor.vercel.app/"
       }
   ]
