@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/ayra-sa/frontend-mentor/tree/main/e-commerce-product-page-challenge)
-- Live Site URL: [Live Site](https://calculator-app-fementor.vercel.app/)
+- Live Site URL: [Live Site](https://e-commerce-product-page-fementor.vercel.app/)
 
 ## My process
 
