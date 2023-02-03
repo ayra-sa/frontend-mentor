@@ -9,15 +9,17 @@ import SectionWrap from './components/Section';
 import DesktopImage from './components/DesktopImage';
 
 function App() {
-  const [quantity, setQuantity] = useState(localStorage.getItem("quantity") || 1)
+  const [quantity, setQuantity] = useState(Number(localStorage.getItem("quantity")) || 1)
   const [notification, setNotification] = useState(localStorage.getItem("notification") || false)
   const [width, setWindowWidth] = useState(0)
 
+  console.log(Number(localStorage.quantity))
+
   let price = 125.00
 
-  // useEffect(() => {
-  //   localStorage.setItem("quantity", quantity)
-  // }, [quantity])
+  useEffect(() => {
+    localStorage.setItem("quantity", quantity)
+  }, [quantity])
   
   useEffect(() => {
     localStorage.setItem("notification", notification)
