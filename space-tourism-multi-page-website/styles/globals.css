@@ -1,0 +1,52 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --color-black: 230deg 35% 7%;
+        --color-blue: 231deg 77% 90%;
+        --color-white: 0deg 0% 100%;
+    }
+}
+
+body {
+    font-size: 1em;
+}
+
+.heading1 {
+    @apply text-[5rem] sm:text-[9.375rem] text-white
+}
+
+.heading2 {
+    @apply text-[3.5rem] text-white sm:text-[5rem] lg:text-[6.25rem]
+}
+
+.heading3 {
+    @apply text-2xl sm:text-[2.5rem] lg:text-[3.5rem] lg:leading-[4rem] text-white
+}
+
+.heading4 {
+    @apply text-base sm:text-2xl lg:text-[2rem] text-white opacity-50
+}
+
+.heading5 {
+    @apply text-base sm:text-xl lg:text-[1.75rem] tracking-widest
+}
+
+.subheading1 {
+    @apply text-[1.75rem] text-white
+}
+
+.subheading2 {
+    @apply text-sm tracking-[2.3625px] text-blue
+}
+
+.subtitle {
+    @apply uppercase mb-8 flex gap-x-3 text-white tracking-widest justify-center sm:justify-start md:text-xl lg:text-[1.75rem]
+}
+
+.body-text {
+    @apply text-[0.938rem] sm:text-base lg:text-lg leading-6 text-blue
+}
