@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 
-const technology = (props) => {
+const Technology = (props) => {
   const techData = props.technology
   const [current, setCurrent] = useState(0)
 
@@ -64,7 +64,7 @@ const technology = (props) => {
   );
 };
 
-export default technology;
+export default Technology;
 
 
 // Fetch data from local JSON

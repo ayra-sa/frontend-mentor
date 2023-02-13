@@ -355,5 +355,12 @@
         "image": "e-commerce-product-page-challenge/src/assets/design/desktop-preview.jpg",
         "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/e-commerce-product-page-challenge",
         "link": "https://e-commerce-product-page-fementor.vercel.app/"
+      },
+      {
+        "name": "Space tourism website challenge",
+        "level": "intermediate",
+        "image": "space-tourism-multi-page-website/public/images/preview.jpg",
+        "repo": "https://github.com/ayra-sa/frontend-mentor/tree/main/space-tourism-multi-page-website",
+        "link": "https://e-commerce-product-page-fementor.vercel.app/"
       }
   ]

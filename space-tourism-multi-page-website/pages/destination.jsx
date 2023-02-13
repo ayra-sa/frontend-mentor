@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const destination = (props) => {
+const Destination = (props) => {
   const destinationData = props.destination;
   const [current, setCurrent] = useState(0);
 
@@ -104,7 +104,7 @@ const destination = (props) => {
   );
 };
 
-export default destination;
+export default Destination;
 
 // Fetching data from JSON file
 import fsPromises from "fs/promises";

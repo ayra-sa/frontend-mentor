@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 
-const crew = (props) => {
+const Crew = (props) => {
   const crewData = props.crew;
   const [current, setCurrent] = useState(0)
 
@@ -69,7 +69,7 @@ const crew = (props) => {
   );
 };
 
-export default crew;
+export default Crew;
 
 // Fetching data from local JSON
 import fsPromises from "fs/promises";
