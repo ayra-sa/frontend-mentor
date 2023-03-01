@@ -66,5 +66,5 @@ const removeActive = () => {
 }
 
 // window.onload = () => {
-//   filterData("all");
+//   alert("helloooo")
 // };
